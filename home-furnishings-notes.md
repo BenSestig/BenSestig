@@ -59,6 +59,20 @@ All warm white 2700K. **None of these SOLHETTA bulbs is dimmable** (IKEA: "The l
 - **Harder case:** a light that can be switched from two places (two-way / "conmutada").
 - Use the same bulb model on each dimmer.
 
+### Total cost with 4 dimmers (spots + dining table)
+
+| Part | Cost |
+|---|---|
+| 4 LED dimmers (Simon 82 ~€50; Simon 31 / Niessen Zenit ~€56–57 each) | ~€200–230 |
+| Electrician (~€30 per switch, ~€50 for a two-way switch) | ~€60–120 |
+| Bulbs: 13 × dimmable SOLHETTA GU10 345 lm (€25.87) + 3 × LUNNOM E27 (€14.97) + the non-dimmable rest (E27 2-pack €2.99, E14 €12.45) | ~€56 |
+| **Total** | **~€320–400** |
+
+- **If the landlord pays** for the dimmers and the electrician, the cost is just the bulbs: **~€56** (vs ~€36 without dimmers).
+- **Buy the dimmable bulbs for those circuits straight away.** Don't buy the non-dimmable GU10 230 lm or E27 250 lm for them.
+- **Minimum load:** each dimmer carries only a few bulbs (e.g. ~4 spots ≈ 10–12W, the dining lamp ≈ 7.5W). Check that the dimmer's minimum LED load is that low.
+- **Two-way switches:** if two of the 4 switches control the same lights, that circuit needs a different setup.
+
 ## Options considered (not chosen)
 
 - **Philips SceneSwitch:** dims with the normal switch in 3 steps. ~€8.33 per GU10 and €7.71 per E27 at MediaMarkt.es.
