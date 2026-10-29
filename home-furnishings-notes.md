@@ -9,7 +9,7 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 | Ceiling spots | GU10, ~230 lm warm white | 13 (buying 15) | 12 spots + spares. Reuse the old working GU10s elsewhere in the house |
 | Dining table lamp | E27, warm white, ideally **dimmable** | 3 | |
 | Extra lamp | E27 | 1 | |
-| Chandelier-type bulbs | E14 | 7 | 6 needed plus 1 spare; should look nice |
+| Mirror lamps (2 lamps × 3 bulbs) | E14 candle | 7 | 6 needed plus 1 spare |
 | Extra lamp | E14 | 1 | |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
@@ -22,13 +22,20 @@ All warm white 2700K. **None of these SOLHETTA bulbs is dimmable** (IKEA: "The l
 | For | Bulb | Art. no. | Qty | Price |
 |---|---|---|---|---|
 | Ceiling spots | SOLHETTA GU10 230 lm, 3-pack | 405.840.81 | 5 packs (15) | €17.45 |
-| Chandelier | SOLHETTA E14 250 lm chandelier/clear, 2-pack | 005.914.27 | **4 packs** (8, incl. a spare) | €9.96 |
+| Mirror lamps | SOLHETTA E14 250 lm chandelier/**opal**, 2-pack | 305.840.34 | **4 packs** (8, incl. spares) | €9.96 |
 | Extra E14 lamp | SOLHETTA E14 250 lm globe opal, 2-pack | 005.839.84 | 1 pack | €2.49 |
 | Dining table lamp + extra E27 lamp | SOLHETTA E27 250 lm globe opal, 45 mm, 2-pack | 205.959.62 | 2 packs (4) | €5.98 |
 | **Total** | | | | **€35.88** |
 
-- **Chandelier spare:** 3 packs of candles give exactly 6, with no spare. The 4th pack (+€2.49) covers the reserve.
+- **Mirror lamps spare:** 3 packs of candles give exactly 6, with no spare. The 4th pack (+€2.49) covers the reserve.
 - **Dining table lamp:** 3 × 250 lm = 750 lm, cosy but on the dim side for eating.
+
+### Mirror lamps: opal, not clear
+
+- **250 lm per bulb** is the old 25W candle level, the usual soft setting for sconces. Each lamp gives ~750 lm, about one 60W bulb. That's normal next to a mirror.
+- **What feels "super bright" is glare:** a bare clear filament at eye level, doubled by its reflection in the mirror.
+- **The fix:** the **opal** candle spreads the same light over the whole glass, so it looks much softer. Same price as the clear one.
+- **Nicer-looking alternative:** IKEA LUNNOM E14 210 lm chandelier, **brown-tinted** clear glass (art. 605.392.38). 2200K, dimmable, €3.99 each (~€28 for 7). It keeps the filament look with less glare.
 
 ### Dining table lamp: dimmable now?
 
