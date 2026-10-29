@@ -39,6 +39,11 @@ No dimmer, app or remote needed.
   - MediaMarkt.es 3-pack: €24.99 (€8.33 per bulb) → 5 packs = €125.
   - MediaMarkt.es also lists a **12-pack** (article 144148229). An older snapshot showed ~€7.61 per bulb (~€91). If that's still the price, a 12-pack + one 3-pack (15 bulbs) costs ~€116.
   - Single bulbs in Spain: Lampara.es €11.90 + shipping.
+  - **Other brands with the same switch trick** (search for "regulable 3 pasos GU10" / "step dimming"):
+    - Lamparayluz.es: 5W 2700K for €8.95, so not cheaper.
+    - Xanlite DIM-K (2700K) and Garza/Garsaco (3000K only): no Spanish price found.
+    - Leroy Merlin's version is 70 mm, too wide for standard 50 mm spots.
+    - None found clearly cheaper than Philips. Most also don't get warmer when dimmed, which Philips does.
   - Goedkopermetled.nl (NL): €16.99 per 3-pack (€5.66 per bulb) → 5 packs = €85. Spain isn't on their shipping list, so ask for a quote via their contact form (they reply within hours). Could save ~€30–40.
 - **Dining table lamp:** 3 × E27 → 3 × SceneSwitch E27 (all three, since they share a switch).
 - **Don't** use SceneSwitch bulbs on a wall dimmer.
