@@ -17,27 +17,36 @@ _Notes taken 2026-10-29 while walking through the apartment._
 
 **Bulb totals:** 4 × E27, 8 × E14, about 20 × GU10
 
-## Bulb proposal: all Philips WarmGlow
+## Bulb proposal: all Philips SceneSwitch
 
-Every bulb is warm white (2700K) and dimmable. WarmGlow also gets **warmer as you dim it**, down to a candle-like 2200K. With one range throughout, the light colour matches in every room.
+**Dim with the existing light switch.** Turn it off and on quickly to step through 3 settings:
+
+| Setting | Brightness | Colour |
+|---|---|---|
+| 1 | 100% | 2700K warm white |
+| 2 | ~40% | 2500K |
+| 3 | ~10% | 2200K candle-like |
+
+No dimmer, app, hub or remote needed, and guests can use it too. All bulbs are warm white; the E14 and E27 are clear filament bulbs, so they look nice where they're visible.
 
 | For | Bulb | Qty | Approx. price |
 |---|---|---|---|
-| Above the table + extra lamp | Philips WarmGlow E27 filament, clear, pear shape, 806 lm (60W) | 4 | ~€9–10 each → ~€40 |
-| Chandelier + extra lamp | Philips WarmGlow E14 filament candle, clear, 470 lm (40W) | 8 | €6–10.50 each → €50–85 |
-| Ceiling spots | Philips WarmGlow GU10 3.8W (50W), dimmable | 24-pack | ~€79 (€3.31 each) |
-| **Total** | | | **about €170–205** |
+| Above the table + extra lamp | Philips SceneSwitch E27 filament, clear, pear shape (60W) | 4 | €9–13 each → ~€40–50 |
+| Chandelier + extra lamp | Philips SceneSwitch E14 filament candle, clear (40W, 470 lm) | 8 | 6-pack ~€65 + 2 singles → ~€60–90 |
+| Ceiling spots | Philips SceneSwitch GU10 (50W) | 15 (12-pack + 3-pack) | ~€89 + ~€28 → ~€118 |
+| **Total** | | | **about €220–260** |
 
-Why the 24-pack of GU10s: replace all 12 spots, including the 6 that still work, so they all have the same colour and dim together. That leaves 12 spares (or a few for the hallway).
+- Replace all 12 spots, including the 6 that still work, so they all match and step together. 15 leaves 3 spares; two 12-packs (24) would cost ~€179.
+- **Don't** use SceneSwitch bulbs on a wall dimmer.
+- When one breaks, replace it with SceneSwitch again. A normal bulb on the same switch won't dim along.
 
-### Check before buying: are the switches dimmers?
+### Alternative: a remote (IKEA KAJPLATS + BILRESA remote)
 
-WarmGlow only dims with a wall dimmer. Check each circuit (table, chandelier, spots):
-
-- **There's a dimmer:** go with the list above. If the dimmer is old (from the halogen days) and the LEDs flicker or hum, replace it with an LED-compatible dimmer (look for "LED" / trailing edge).
-- **Just a normal switch:** use one of these for that circuit instead:
-  - **Philips SceneSwitch** (no dimmer needed). Flicking the switch cycles through 3 levels: 100% at 2700K, 40% at 2500K and 10% at 2200K. The GU10 version costs about €7.44 each in a 12-pack, and there's an E27 version. Never use it on a dimmer.
-  - **IKEA KAJPLATS** smart bulbs: dimmed and warmed from the app or a remote, about €5–8 each. They need a hub (IKEA DIRIGERA), and the E14 clear version had limited stock in Belgium.
+- The KAJPLATS smart bulbs pair directly with IKEA's BILRESA remote, with no hub or app needed. You get smooth dimming and can set warm or cooler white.
+- Bulbs cost about €5–8 each.
+- One remote handles **up to 10 bulbs**, so the 12 spots would need 2 remotes.
+- The clear E14 version had limited stock in Belgium.
+- Good for a room where a remote is handier than the wall switch.
 
 ## Round rug for the dining table
 
