@@ -73,6 +73,16 @@ Everything else gets ordinary warm white (2700K) bulbs, e.g. IKEA SOLHETTA. IKEA
 - Prices at IKEA's island stores: remote ~€5, E27 bulb ~€10. Check ikea.com/es for mainland prices.
 - One remote handles **up to 10 bulbs**, so 12 spots need 2 remotes.
 
+### Alternative: replace the wall switch with an LED dimmer
+
+- **The swap:** usually simple. It uses the same wall box and the same 2 wires, and takes 15–30 minutes with the breaker off. Get an electrician if unsure.
+- **What to buy:**
+  - An **LED dimmer** ("regulador LED", 2-wire / no neutral) from the **same brand and series** as the existing switches, so it fits the frame. Examples: Simon 31 or Niessen Zenit, ~€56–57 at Obramat.
+  - Bulbs must be **dimmable** ("regulable"). **No SceneSwitch bulbs on a dimmer.**
+- **Harder case:** if the light can be switched from two places (two-way / "conmutada").
+- **Spots:** dimmer ~€57 + 13 × dimmable IKEA SOLHETTA GU10 2700K (~€3.50) ≈ **€103**, compared with ~€125 for SceneSwitch. You also get smooth dimming instead of 3 steps.
+- **Dining table lamp** (only 3 bulbs): SceneSwitch (~€23) is cheaper than a dimmer + bulbs (~€70).
+
 ## Rugs
 
 ### Round rug for the dining table: Ø 240 cm
