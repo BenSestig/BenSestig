@@ -36,6 +36,7 @@ All warm white 2700K. **None of these SOLHETTA bulbs is dimmable** (IKEA: "The l
 - **What feels "super bright" is glare:** a bare clear filament at eye level, doubled by its reflection in the mirror.
 - **The fix:** the **opal** candle spreads the same light over the whole glass, so it looks much softer. Same price as the clear one.
 - **Nicer-looking alternative:** IKEA LUNNOM E14 210 lm chandelier, **brown-tinted** clear glass (art. 605.392.38). 2200K, dimmable, €3.99 each (~€28 for 7). It keeps the filament look with less glare.
+- **"Candle light" colour:** IKEA calls it **warm glow (2200K)**. It's only in the LUNNOM range; SOLHETTA is always 2700K warm white.
 
 ### Dining table lamp: dimmable now?
 
