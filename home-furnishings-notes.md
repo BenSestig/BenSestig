@@ -29,31 +29,36 @@ No dimmer, app or remote needed.
 
 | For | Bulb | Where in Spain | Qty | Approx. price |
 |---|---|---|---|---|
-| Ceiling spots | SceneSwitch GU10 50W, clear, 3-pack | MediaMarkt.es (cheapest found in Spain) | 5 packs = 15 bulbs | €6.60 each → ~€99 |
+| Ceiling spots | SceneSwitch GU10 50W, clear, 3-pack | MediaMarkt.es | 5 packs = 15 bulbs | €24.99 per pack (€8.33 each) → ~€125 |
 | Chandelier + extra lamp | SceneSwitch E14 filament candle, 5W / 470 lm | Amazon.es (ASIN B07FK64MMZ) | 8 | price not shown; ~€7–12 each elsewhere → ~€55–95 |
 | Above the table + extra lamp | SceneSwitch E27 60W (frosted, not filament) | MediaMarkt.es | 4 | €7.71 each → ~€31 |
 
 - **E27:** I couldn't find the clear filament E27 SceneSwitch in a Spanish shop. The frosted one is fine if lampshades hide the bulbs. If the bulbs show, search Amazon.es for EAN 8718699772130 (clear filament version).
 - Replace all 12 spots so they all step together. Use the 6 old bulbs that still work as replacements elsewhere in the house.
-- **GU10 price check:** MediaMarkt.es 3-pack (€6.60 per bulb) is the cheapest found in Spain. A single at Lampara.es costs €11.90 plus shipping, so a 5th 3-pack is cheaper than 4 packs + 1 single. Goedkopermetled.nl (NL) sells the 3-pack for €16.99 (€5.66 per bulb), but shipping to Spain is unconfirmed and the saving would be ~€15 at most.
+- **GU10 price check:**
+  - MediaMarkt.es 3-pack: €24.99 (€8.33 per bulb) → 5 packs = €125.
+  - MediaMarkt.es also lists a **12-pack** (article 144148229). An older snapshot showed ~€7.61 per bulb (~€91). If that's still the price, a 12-pack + one 3-pack (15 bulbs) costs ~€116.
+  - Single bulbs in Spain: Lampara.es €11.90 + shipping.
+  - Goedkopermetled.nl (NL): €16.99 per 3-pack (€5.66 per bulb) → 5 packs = €85. Spain isn't on their shipping list, so ask for a quote via their contact form (they reply within hours). Could save ~€30–40.
 - **Dining table lamp:** 3 × E27 → 3 × SceneSwitch E27 (all three, since they share a switch).
 - **Don't** use SceneSwitch bulbs on a wall dimmer.
 - When one breaks, replace it with SceneSwitch again.
 
 **Estimated total if everything is SceneSwitch: ~€185–265**
 
-### Chosen plan: SceneSwitch only in the dining and seating area (~9 bulbs)
+### Chosen plan: SceneSwitch for the spots and the dining table lamp
 
-Everything else gets ordinary warm white (2700K) bulbs, e.g. IKEA SOLHETTA. Prices are from IKEA's island stores; mainland prices may differ slightly.
+Everything else gets ordinary warm white (2700K) bulbs, e.g. IKEA SOLHETTA. IKEA prices are from its island stores; mainland prices may differ slightly.
 
 | Part | Price |
 |---|---|
-| 9 × SceneSwitch | €6.60 (GU10) to ~€12 (E14) each → **~€60–95** |
-| Ordinary bulbs: SOLHETTA GU10 345 lm | ~€3.50 each |
-| Ordinary bulbs: SOLHETTA E27 806 lm | ~€5.50–6 per 2-pack |
-| Ordinary bulbs: E14 | SOLHETTA (frosted) ~€2–5, or a clear filament candle from Garza.es €5.80 if they should look nice |
-| All ordinary bulbs together | **~€50–90** |
-| **Total** | **~€115–180** |
+| 13 × SceneSwitch GU10 (buy 5 × 3-pack = 15) | ~€125 |
+| 3 × SceneSwitch E27 for the dining table lamp (€7.71 each) | ~€23 |
+| 1 × ordinary E27 (SOLHETTA 806 lm, 2-pack) | ~€6 |
+| 8 × ordinary E14: SOLHETTA (frosted, ~€2–5) or a clear filament candle from Garza.es (€5.80) | ~€16–46 |
+| **Total** | **~€170–200** |
+
+- The 6 old GU10s that still work go to other spots in the house.
 
 - **Split by switch:** every bulb on the same switch must be SceneSwitch, otherwise only some of them dim.
 
