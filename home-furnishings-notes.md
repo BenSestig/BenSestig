@@ -6,100 +6,47 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 
 | Item | Fitting / size | Qty | Notes |
 |---|---|---|---|
-| Bulbs above the table | E27 | 3 | |
-| Extra lamp | E27 | 1 | |
-| Nice-looking chandelier-type bulbs | E14 | 7 | 6 needed plus 1 spare |
+| Ceiling spots | GU10, **dimmable** | 13 | 12 spots + 1 spare. Reuse the old working GU10s elsewhere in the house |
+| Dining table lamp | E27, **dimmable** | 3 | |
+| Extra lamp | E27 | 1 | Use the 4th bulb from the dimmable 2-packs |
+| Chandelier-type bulbs | E14 | 7 | 6 needed plus 1 spare; should look nice |
 | Extra lamp | E14 | 1 | |
-| Spot bulbs | GU10, dimmable with the wall switch (3 steps) | 13 | 12 spots + 1 spare. Reuse the old working GU10s elsewhere in the house |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
 | Warming/dimming film for the LED strip | 1.5 cm strips | 1 | See below |
 
-## Bulbs: Philips SceneSwitch
+## Bulbs (final plan)
 
-**Dim with the existing light switch.** Turn it off and on quickly to step through 3 settings:
+Simple warm white (2700K) bulbs everywhere. The spots and the dining table lamp get **dimmable** bulbs, ready for a wall dimmer. Until a dimmer is fitted, they work normally (at full brightness) on the current switches.
 
-| Setting | Brightness | Colour |
-|---|---|---|
-| 1 | 100% | 2700K warm white |
-| 2 | ~40% | 2500K |
-| 3 | ~10% | 2200K candle-like |
-
-No dimmer, app or remote needed.
-
-| For | Bulb | Where in Spain | Qty | Approx. price |
+| For | Bulb | Where | Qty | Price |
 |---|---|---|---|---|
-| Ceiling spots | SceneSwitch GU10 50W, clear, 3-pack | MediaMarkt.es | 5 packs = 15 bulbs | €24.99 per pack (€8.33 each) → ~€125 |
-| Chandelier + extra lamp | SceneSwitch E14 filament candle, 5W / 470 lm | Amazon.es (ASIN B07FK64MMZ) | 8 | price not shown; ~€7–12 each elsewhere → ~€55–95 |
-| Above the table + extra lamp | SceneSwitch E27 60W (frosted, not filament) | MediaMarkt.es | 4 | €7.71 each → ~€31 |
+| Ceiling spots | IKEA SOLHETTA GU10 345 lm, dimmable, 2700K, 40° beam, 50 mm | IKEA | 13 | €1.99 each → ~€26 |
+| Dining table lamp + extra E27 lamp | IKEA SOLHETTA E27 806 lm, dimmable, 2700K, CRI 90, opal globe | IKEA | 2 × 2-pack (4 bulbs) | €3.49 per pack → ~€7 |
+| Chandelier + extra E14 lamp | Clear filament candle E14 470 lm 2700K (123led brand) | 123tinta.es | 6-pack + 2 singles (8 bulbs) | €17.55 + 2 × ~€3.15 → ~€24 + shipping |
+| **Total** | | | | **~€57** |
 
-- **E27:** I couldn't find the clear filament E27 SceneSwitch in a Spanish shop. The frosted one is fine if lampshades hide the bulbs. If the bulbs show, search Amazon.es for EAN 8718699772130 (clear filament version).
-- Replace all 12 spots so they all step together. Use the 6 old bulbs that still work as replacements elsewhere in the house.
-- **GU10 price check:**
-  - MediaMarkt.es 3-pack: €24.99 (€8.33 per bulb) → 5 packs = €125.
-  - MediaMarkt.es also lists a **12-pack** (article 144148229). An older snapshot showed ~€7.61 per bulb (~€91). If that's still the price, a 12-pack + one 3-pack (15 bulbs) costs ~€116.
-  - Single bulbs in Spain: Lampara.es €11.90 + shipping.
-  - **Other brands with the same switch trick** (search for "regulable 3 pasos GU10" / "step dimming"):
-    - Lamparayluz.es: 5W 2700K for €8.95, so not cheaper.
-    - Xanlite DIM-K (2700K) and Garza/Garsaco (3000K only): no Spanish price found.
-    - Leroy Merlin's version is 70 mm, too wide for standard 50 mm spots.
-    - None found clearly cheaper than Philips. Most also don't get warmer when dimmed, which Philips does.
-  - Goedkopermetled.nl (NL): €16.99 per 3-pack (€5.66 per bulb) → 5 packs = €85. Spain isn't on their shipping list, so ask for a quote via their contact form (they reply within hours). Could save ~€30–40.
-- **Dining table lamp:** 3 × E27 → 3 × SceneSwitch E27 (all three, since they share a switch). No cheaper switch-dimmable E27 found.
+- **Cheaper E14:** IKEA SOLHETTA E14 470 lm candle in opal (frosted, not clear), €2.99 per 2-pack → 4 packs ≈ €12. That brings the total to ~€45.
+- **Upgrade for the spots once there's a dimmer:** Philips WarmGlow GU10 from MediaMarkt.es, ~€2.82–3.07 per bulb in 6- or 24-packs. It gets warmer as it dims, like candlelight.
+- IKEA prices are from ikea.com/es (mainland). Check stock before going. Online, the GU10 has a minimum order of 2.
 
-### Cheaper switch-dimmable GU10s (instead of Philips)
+## Dimmer: ask the landlord
 
-| Option | Steps | Colour | Price each | For 13–15 |
-|---|---|---|---|---|
-| **Byverdleds.com** 7W GU10 "regulable con interruptor" (**recommended**) | 100% → 50% → 10% | 3000K warm white | €2.54 | 13 = €33, free shipping over €29.90 |
-| **LUEDD** 5-pack, 50 mm clear, "regulable en 3 pasos en Kelvin" (Lamparayluz.es) | 3 steps, bright 2700K → soft 2000K (closest to SceneSwitch) | 2700K → 2000K | €3.71–3.99 | 3 packs (15) = €56–60 + possible shipping |
-| Same LUEDD 5-pack at Leroy Merlin / ManoMano | | | €5.99 | 15 = €90 |
-| Philips SceneSwitch (MediaMarkt.es) | 100% → 40% → 10% | 2700K → 2200K | €8.33 | 15 = €125 |
+- **Ask for:** LED dimmers ("regulador LED") on two switches: the ceiling spots and the dining table lamp.
+- **The dimmer must be:**
+  - LED-compatible (trailing edge).
+  - Rated for a **low minimum load**. The dining lamp is only ~15W (3 × 5W) and the spots ~33W (13 × 2.5W). Dimmers with a high minimum load make LEDs flicker.
+  - 2-wire (no neutral) if the switch box has no neutral wire.
+  - The same brand and series as the existing switches, so it fits the frame. Examples: Simon 31 or Niessen Zenit, ~€56–57 each at Obramat.
+- **Harder case:** a light that can be switched from two places (two-way / "conmutada").
+- **Never put non-dimmable bulbs on a dimmer** (e.g. the old GU10s): they flicker or don't switch off properly.
+- Use the same bulb model on each dimmer.
 
-- **Byverdleds:** sold by Byverd Leds S.L. (Águilas, Murcia), 2-year warranty.
-  - Unbranded; no reviews found.
-  - 560 lm, a bit brighter than Philips at full.
-  - Wide 120° beam, so softer, less "spotty" light.
-  - Stays 3000K when dimmed.
-- **LUEDD:** the listings don't say how dim each step gets. CRI 80. The Lamparayluz.es offer price may expire, and shipping isn't confirmed.
-- **Branded 3-step GU10s** (Osram/Ledvance, Eglo, Paulmann): €5–9 abroad, €8.75 in Spain, so no saving over Philips.
-- **Use one model per switch** (brands step differently), and never on a dimmer.
-- **Don't** use SceneSwitch bulbs on a wall dimmer.
-- When one breaks, replace it with SceneSwitch again.
+## Options considered (not chosen)
 
-**Estimated total if everything is SceneSwitch: ~€185–265**
-
-### Chosen plan: switch-dimmable spots and dining table lamp
-
-Everything else gets ordinary warm white (2700K) bulbs, e.g. IKEA SOLHETTA. IKEA prices are from its island stores; mainland prices may differ slightly.
-
-| Part | Price |
-|---|---|
-| 13 × switch-dimmable GU10 from Byverdleds (€2.54 each, free shipping over €29.90) | ~€33 |
-| 3 × SceneSwitch E27 for the dining table lamp (€7.71 each) | ~€23 |
-| 1 × ordinary E27 (SOLHETTA 806 lm, 2-pack) | ~€6 |
-| 8 × ordinary E14: SOLHETTA (frosted, ~€2–5) or a clear filament candle from Garza.es (€5.80) | ~€16–46 |
-| **Total** | **~€80–110** |
-
-- The 6 old GU10s that still work go to other spots in the house.
-
-- **Split by switch:** every bulb on the same switch must be SceneSwitch, otherwise only some of them dim.
-
-### Alternative: a remote (IKEA KAJPLATS + BILRESA)
-
-- KAJPLATS smart bulbs pair directly with the BILRESA remote, with no hub or app needed.
-- Prices at IKEA's island stores: remote ~€5, E27 bulb ~€10. Check ikea.com/es for mainland prices.
-- One remote handles **up to 10 bulbs**, so 12 spots need 2 remotes.
-
-### Alternative: replace the wall switch with an LED dimmer
-
-- **The swap:** usually simple. It uses the same wall box and the same 2 wires, and takes 15–30 minutes with the breaker off. Get an electrician if unsure.
-- **What to buy:**
-  - An **LED dimmer** ("regulador LED", 2-wire / no neutral) from the **same brand and series** as the existing switches, so it fits the frame. Examples: Simon 31 or Niessen Zenit, ~€56–57 at Obramat.
-  - Bulbs must be **dimmable** ("regulable"). **No SceneSwitch bulbs on a dimmer.**
-- **Harder case:** if the light can be switched from two places (two-way / "conmutada").
-- **Spots:** dimmer ~€57 + 13 × dimmable IKEA SOLHETTA GU10 2700K (~€3.50) ≈ **€103**, compared with ~€125 for SceneSwitch. You also get smooth dimming instead of 3 steps.
-- **Dining table lamp** (only 3 bulbs): SceneSwitch (~€23) is cheaper than a dimmer + bulbs (~€70).
+- **Philips SceneSwitch:** dims with the normal switch in 3 steps. ~€8.33 per GU10 and €7.71 per E27 at MediaMarkt.es.
+  - Cheaper copies: Byverdleds.com GU10 €2.54 (3000K), LUEDD 5-pack ~€19–30 (2700→2000K).
+- **IKEA KAJPLATS + BILRESA remote:** smart bulbs dimmed by remote, no hub needed.
 
 ## Rugs
 
