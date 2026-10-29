@@ -10,7 +10,7 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 | Extra lamp | E27 | 1 | |
 | Nice-looking chandelier-type bulbs | E14 | 7 | 6 needed plus 1 spare |
 | Extra lamp | E14 | 1 | |
-| Spot bulbs | GU10 SceneSwitch | 13 (buy 15) | 12 spots + spares. Reuse the old working GU10s elsewhere in the house |
+| Spot bulbs | GU10, dimmable with the wall switch (3 steps) | 13 | 12 spots + 1 spare. Reuse the old working GU10s elsewhere in the house |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
 | Warming/dimming film for the LED strip | 1.5 cm strips | 1 | See below |
@@ -45,23 +45,41 @@ No dimmer, app or remote needed.
     - Leroy Merlin's version is 70 mm, too wide for standard 50 mm spots.
     - None found clearly cheaper than Philips. Most also don't get warmer when dimmed, which Philips does.
   - Goedkopermetled.nl (NL): €16.99 per 3-pack (€5.66 per bulb) → 5 packs = €85. Spain isn't on their shipping list, so ask for a quote via their contact form (they reply within hours). Could save ~€30–40.
-- **Dining table lamp:** 3 × E27 → 3 × SceneSwitch E27 (all three, since they share a switch).
+- **Dining table lamp:** 3 × E27 → 3 × SceneSwitch E27 (all three, since they share a switch). No cheaper switch-dimmable E27 found.
+
+### Cheaper switch-dimmable GU10s (instead of Philips)
+
+| Option | Steps | Colour | Price each | For 13–15 |
+|---|---|---|---|---|
+| **Byverdleds.com** 7W GU10 "regulable con interruptor" (**recommended**) | 100% → 50% → 10% | 3000K warm white | €2.54 | 13 = €33, free shipping over €29.90 |
+| **LUEDD** 5-pack, 50 mm clear, "regulable en 3 pasos en Kelvin" (Lamparayluz.es) | 3 steps, bright 2700K → soft 2000K (closest to SceneSwitch) | 2700K → 2000K | €3.71–3.99 | 3 packs (15) = €56–60 + possible shipping |
+| Same LUEDD 5-pack at Leroy Merlin / ManoMano | | | €5.99 | 15 = €90 |
+| Philips SceneSwitch (MediaMarkt.es) | 100% → 40% → 10% | 2700K → 2200K | €8.33 | 15 = €125 |
+
+- **Byverdleds:** sold by Byverd Leds S.L. (Águilas, Murcia), 2-year warranty.
+  - Unbranded; no reviews found.
+  - 560 lm, a bit brighter than Philips at full.
+  - Wide 120° beam, so softer, less "spotty" light.
+  - Stays 3000K when dimmed.
+- **LUEDD:** the listings don't say how dim each step gets. CRI 80. The Lamparayluz.es offer price may expire, and shipping isn't confirmed.
+- **Branded 3-step GU10s** (Osram/Ledvance, Eglo, Paulmann): €5–9 abroad, €8.75 in Spain, so no saving over Philips.
+- **Use one model per switch** (brands step differently), and never on a dimmer.
 - **Don't** use SceneSwitch bulbs on a wall dimmer.
 - When one breaks, replace it with SceneSwitch again.
 
 **Estimated total if everything is SceneSwitch: ~€185–265**
 
-### Chosen plan: SceneSwitch for the spots and the dining table lamp
+### Chosen plan: switch-dimmable spots and dining table lamp
 
 Everything else gets ordinary warm white (2700K) bulbs, e.g. IKEA SOLHETTA. IKEA prices are from its island stores; mainland prices may differ slightly.
 
 | Part | Price |
 |---|---|
-| 13 × SceneSwitch GU10 (buy 5 × 3-pack = 15) | ~€125 |
+| 13 × switch-dimmable GU10 from Byverdleds (€2.54 each, free shipping over €29.90) | ~€33 |
 | 3 × SceneSwitch E27 for the dining table lamp (€7.71 each) | ~€23 |
 | 1 × ordinary E27 (SOLHETTA 806 lm, 2-pack) | ~€6 |
 | 8 × ordinary E14: SOLHETTA (frosted, ~€2–5) or a clear filament candle from Garza.es (€5.80) | ~€16–46 |
-| **Total** | **~€170–200** |
+| **Total** | **~€80–110** |
 
 - The 6 old GU10s that still work go to other spots in the house.
 
