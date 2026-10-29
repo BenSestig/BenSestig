@@ -2,20 +2,24 @@
 
 _Notes taken 2026-10-29 while walking through the apartment._
 
-## Rug (for the sofa)
+## Shopping list
 
-- **Budget:** around 240 (the upper figure); 150 would also be fine
-- **Width:** 160 cm ideally, 180 cm at most
-
-## Light bulbs
-
-| Where | Fitting | How many | Notes |
+| Item | Fitting / size | Qty | Notes |
 |---|---|---|---|
-| Desk lamp | E14 | 1 | Needed |
-| Second lamp (it was only on the designs at first, then found) | E27 | 1 | Fitting confirmed |
-| Lights next to the mirror | E15 (check: probably E14) | 7 | 6 fittings + 1 spare. These are on show, so the bulbs should look nice and not like the cheapest ones |
-| Ceiling spots | GU10 | 6 to 11, or 15 if a cheap multipack | 12 spots in total, 6 have dead bulbs. The fittings are fine, only the bulbs burned out |
-| Hallway | probably GU10 | (low priority) | 3 lights, 1 working. Skipped for now |
+| Bulbs above the table | E27 | 3 | |
+| Extra lamp | E27 | 1 | |
+| Nice-looking chandelier-type bulbs | E15 (check: probably E14) | 7 | 6 needed plus 1 spare |
+| Extra lamp | E15 (check: probably E14) | 1 | |
+| Spot bulbs | GU10 | ~20 (one pack) | Includes spares |
+| Rug | about 150 × 240 cm | 1 | See below |
+
+**Bulb totals:** 4 × E27, 8 × E15/E14, about 20 × GU10
+
+## Rug
+
+- Table is 110 cm.
+- The rug should be at least 20 cm bigger than the table, so about 150 cm wide.
+- From the earlier notes: 240 cm long, 160 cm wide (180 at most), and 150 also works.
 
 ## Other
 
@@ -23,7 +27,5 @@ _Notes taken 2026-10-29 while walking through the apartment._
 
 ## Open items
 
-- [ ] Check the bulb fitting next to the mirror: "E15" is rare, so it may be E14
-- [ ] Decide on the GU10 quantity once prices are known (bulk pack of about 15?)
-- [ ] Find a ladder
-- [ ] The notes stop partway through the ladder discussion ("We stand on the…"), so add anything that came after
+- [ ] Check the E15 fitting before buying. E15 is rare and chandelier/candle bulbs are usually E14.
+- [ ] Settle the rug size (the recommendation discussion was cut off).
