@@ -6,64 +6,64 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 
 | Item | Fitting / size | Qty | Notes |
 |---|---|---|---|
-| Ceiling spots | GU10, ~230 lm warm white | 13 | 12 spots + 1 spare. Reuse the old working GU10s elsewhere in the house |
-| Dining table lamp | E27, ~470 lm, **dimmable** | 3 | |
-| Extra lamp | E27 | 1 | Any simple warm white bulb |
+| Ceiling spots | GU10, ~230 lm warm white | 13 (buying 15) | 12 spots + spares. Reuse the old working GU10s elsewhere in the house |
+| Dining table lamp | E27, warm white, ideally **dimmable** | 3 | |
+| Extra lamp | E27 | 1 | |
 | Chandelier-type bulbs | E14 | 7 | 6 needed plus 1 spare; should look nice |
 | Extra lamp | E14 | 1 | |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
 | Warming/dimming film for the LED strip | 1.5 cm strips | 1 | See below |
 
-## Bulbs (final plan)
+## Bulbs: IKEA order (SOLHETTA everywhere)
 
-Simple warm white bulbs everywhere, with **lower lumens** for the spots and the dining table lamp. There are 12 spots to spread the light, so each one can be dimmer. The dining table lamp gets **dimmable** bulbs, ready for a wall dimmer.
+All warm white 2700K. **None of these SOLHETTA bulbs is dimmable** (IKEA: "The light bulb is not dimmable"). That's fine until a dimmer is installed.
 
-| For | Bulb | Where | Qty | Price |
+| For | Bulb | Art. no. | Qty | Price |
 |---|---|---|---|---|
-| Ceiling spots | IKEA SOLHETTA GU10 230 lm, 2700K, 36° (not dimmable; see options below) | IKEA | 5 × 3-pack (15) | €3.49 per pack → ~€17 |
-| Dining table lamp | IKEA LUNNOM E27 470 lm, dimmable, 2200K, clear globe Ø 95 mm | IKEA | 3 | €4.99 each → ~€15 |
-| Extra E27 lamp | Any simple warm white E27, e.g. IKEA SOLHETTA E27 470 lm | IKEA | 1 | ~€3 |
-| Chandelier + extra E14 lamp | Clear filament candle E14 470 lm 2700K (123led brand) | 123tinta.es | 6-pack + 2 singles (8 bulbs) | €17.55 + 2 × ~€3.15 → ~€24 + shipping |
-| **Total** | | | | **~€59** |
+| Ceiling spots | SOLHETTA GU10 230 lm, 3-pack | 405.840.81 | 5 packs (15) | €17.45 |
+| Chandelier | SOLHETTA E14 250 lm chandelier/clear, 2-pack | 005.914.27 | **4 packs** (8, incl. a spare) | €9.96 |
+| Extra E14 lamp | SOLHETTA E14 250 lm globe opal, 2-pack | 005.839.84 | 1 pack | €2.49 |
+| Dining table lamp + extra E27 lamp | SOLHETTA E27 250 lm globe opal, 45 mm, 2-pack | 205.959.62 | 2 packs (4) | €5.98 |
+| **Total** | | | | **€35.88** |
 
-- **Cheaper E14:** IKEA SOLHETTA E14 470 lm candle in opal (frosted, not clear), €2.99 per 2-pack → 4 packs ≈ €12. That brings the total to ~€47.
-- IKEA prices are from ikea.com/es (mainland), except the SOLHETTA E27 470 lm (island stores). Check stock before going.
+- **Chandelier spare:** 3 packs of candles give exactly 6, with no spare. The 4th pack (+€2.49) covers the reserve.
+- **Dining table lamp:** 3 × 250 lm = 750 lm, cosy but on the dim side for eating.
 
-### Dining table lamp: 470 lm instead of 806 lm
+### Dining table lamp: dimmable now?
 
-- 3 × 470 lm ≈ 1,400 lm, enough for eating at a 110 cm table. 3 × 806 lm (≈ 2,400 lm) would glare, especially without a dimmer.
-- LUNNOM is 2200K: extra warm and candle-like, with a decorative clear globe.
-- **Check that a 95 mm globe fits the lamp's shades** (a normal bulb is 60 mm wide). If not: Philips WarmGlow E27 40W (normal bulb shape, 470 lm, 2700K → 2200K when dimmed), ~€6.95 at 123tinta.es.
+- **Option:** swap the dining lamp's SOLHETTA E27 for **IKEA LUNNOM E27 470 lm**, art. 406.148.27. It's dimmable, 2200K (extra warm), a clear globe Ø 95 mm, €4.99 each.
+  - Brighter (~1,400 lm total) and ready for a dimmer.
+  - Then buy only 1 pack of SOLHETTA E27 (for the extra lamp).
+  - Total becomes ~€48.
+- Check that a 95 mm globe fits the lamp's shades.
+- SOLHETTA's only dimmable E27 is 806 lm, too bright for this lamp.
 
-### Spots: how bright?
+### Spots: why 230 lm
 
-- **Total light:** 12 × 345 lm ≈ 4,100 lm, roughly **double** what the 6 working spots give today (if the old bulbs are the usual ~350 lm). 12 × 230 lm ≈ 2,800 lm is closer to today's level, spread evenly.
+- **Total light:** 12 × 230 lm ≈ 2,800 lm, close to what the 6 working spots give today (if the old bulbs are the usual ~350 lm). 12 × 345 lm would be roughly double.
 - **Tip:** read the lumens printed on an old bulb. Half that per bulb across 12 spots keeps today's brightness.
-- **The catch:** IKEA's 230 lm GU10 isn't dimmable.
-
-| Option | Bulb | For 13–15 | When it makes sense |
-|---|---|---|---|
-| **A (recommended)** | IKEA SOLHETTA GU10 230 lm, not dimmable | ~€17 | The dimmer isn't certain. If it comes, switch to B (~€26) and keep these as spares |
-| B | IKEA SOLHETTA GU10 345 lm, dimmable, €1.99 each | ~€26 | A dimmer is coming soon: just dim them down |
-| C | Philips WarmGlow GU10 35W: 230 lm, dimmable, 2700K → 2200K when dimmed, CRI 90 | ~€86 (123inkt BE/NL prices) to ~€135 (MediaMarkt.es) | Low lumens **and** dimmable in one purchase |
 
 ## Dimmer: ask the landlord
 
 - **Ask for:** LED dimmers ("regulador LED") on the dining table lamp's switch and, optionally, the spots' switch.
+- **When a dimmer goes in, swap to dimmable bulbs on that circuit:**
+  - Spots: SOLHETTA GU10 345 lm dimmable, art. 205.840.96, €1.99 each (~€26 for 13).
+  - Dining lamp: LUNNOM E27 470 lm dimmable (see above).
+  - Non-dimmable bulbs on a dimmer flicker or don't switch off properly.
 - **The dimmer must be:**
   - LED-compatible (trailing edge).
-  - Rated for a **very low minimum load**. The dining lamp draws only ~7.5W (3 × 2.5W) and the spots ~30–35W. Below a dimmer's minimum load, LEDs flicker.
+  - Rated for a **very low minimum load**. The dining lamp draws only ~7.5W (3 × 2.5W) and the spots ~30W. Below a dimmer's minimum load, LEDs flicker.
   - 2-wire (no neutral) if the switch box has no neutral wire.
   - The same brand and series as the existing switches, so it fits the frame. Examples: Simon 31 or Niessen Zenit, ~€56–57 each at Obramat.
 - **Harder case:** a light that can be switched from two places (two-way / "conmutada").
-- **Never put non-dimmable bulbs on a dimmer** (e.g. the old GU10s or IKEA's 230 lm GU10): they flicker or don't switch off properly.
 - Use the same bulb model on each dimmer.
 
 ## Options considered (not chosen)
 
 - **Philips SceneSwitch:** dims with the normal switch in 3 steps. ~€8.33 per GU10 and €7.71 per E27 at MediaMarkt.es.
   - Cheaper copies: Byverdleds.com GU10 €2.54 (3000K), LUEDD 5-pack ~€19–30 (2700→2000K).
+- **Philips WarmGlow GU10 35W:** 230 lm and dimmable in one bulb, but ~€86–135 for 13.
 - **IKEA KAJPLATS + BILRESA remote:** smart bulbs dimmed by remote, no hub needed.
 
 ## Rugs
