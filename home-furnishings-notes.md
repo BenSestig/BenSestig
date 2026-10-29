@@ -13,7 +13,7 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 | Extra lamp | E14 | 1 | |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
-| Warming/dimming film for the LED strip | 1.5 cm strips | 1 | See below |
+| Film for the LED strip | LEE 204 + LEE 209 gel sheets | 1 sheet each | Cut into 1.5 cm strips; see below |
 
 ## Bulbs: order
 
@@ -113,10 +113,20 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 
 Goal: about 70% dimmer and warmer, with 1.5 cm strips over the LEDs.
 
-- **LEE 204 Full CTO**: warms the light and lets through ~55%. **Thomann.es** sells a 25 × 122 cm sheet for €6.30, currently "on request" (no confirmed delivery date). One sheet gives ~16 strips of 122 cm, about 19 m in total.
-- **LEE 209 0.3 ND**: lets through 50%. Also a Thomann item; check the price.
-- Together they let through ~28%, so the strip ends up **about 70% dimmer**. Hold them on with clear tape.
-- If the strip is 12/24V, an inline dimmer plus a 1/2 CTO gel is an alternative.
+**Recommendation: lighting gel.** This is the heat-proof filter film used on stage and studio lights, cut into 1.5 cm strips and laid over the LEDs.
+
+| Gel | What it does | Where | Price |
+|---|---|---|---|
+| **LEE 204 Full CTO** (orange) | Warms cold white to ~3200K; lets through ~55% | Thomann.es, 25 × 122 cm sheet | €6.30 (currently "on request") |
+| **LEE 209 0.3 ND** (grey) | Lets through 50%, no colour change | Thomann or any photo/theatre shop | Check the price |
+
+- **Result:** together they let ~28% through, so the strip ends up **~70% dimmer and warm white**.
+- **Coverage:** one sheet of each gives ~16 strips of 1.5 × 122 cm, about 19 m of LED strip.
+- **How:** cut 1.5 cm strips with a ruler and a cutter. Lay a 204 and a 209 strip on top of each other over the LEDs, and fix the ends with clear tape (or thin double-sided tape).
+- **Same product, other brand:** Rosco calls it "Full CTO" (Rosco 3407 / E-Colour 204).
+- **One-product variant:** two layers of LEE 204 and no 209. Also ~70% dimmer, but candle-warm (~2100K) instead of warm white. One sheet covers ~9 m.
+- **Quick test first:** a roll of 15 mm cream washi tape (a few euros at Flying Tiger or Action). It dims and softens the light; add a second layer if it's not enough. Less precise and a bit "papery", but it peels off without residue (rental-friendly).
+- **If the strip is 12/24V with an accessible plug:** an inline dimmer dims it properly. A single 1/2 CTO gel (LEE 205) then handles the warmth.
 
 ## Other
 
