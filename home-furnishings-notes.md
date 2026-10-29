@@ -122,7 +122,12 @@ Goal: about 70% dimmer and warmer, with 1.5 cm strips over the LEDs.
 
 - **Result:** together they let ~28% through, so the strip ends up **~70% dimmer and warm white**.
 - **Coverage:** one sheet of each gives ~16 strips of 1.5 × 122 cm, about 19 m of LED strip.
-- **How:** cut 1.5 cm strips with a ruler and a cutter. Lay a 204 and a 209 strip on top of each other over the LEDs, and fix the ends with clear tape (or thin double-sided tape).
+- **How:** cut strips the width of standard tape (~1.5–1.9 cm) with a ruler and a cutter. Lay a 204 and a 209 strip on top of each other over the LEDs, and fix only the ends with ordinary clear tape.
+- **Is covering it safe?** Yes, for a normal LED strip.
+  - It gets warm, not hot, so gel and tape won't burn. LEE gel is made for hot stage lights.
+  - **Touch test:** after an hour on, if you can keep a finger on the strip, covering it is fine. If it's too hot to touch, don't cover it; use a dimmer instead.
+  - Don't cover the strip's power adapter.
+  - Ordinary clear tape can yellow and get sticky from the warmth over time (residue in a rental), so only tape the ends.
 - **Same product, other brand:** Rosco calls it "Full CTO" (Rosco 3407 / E-Colour 204).
 - **One-product variant:** two layers of LEE 204 and no 209. Also ~70% dimmer, but candle-warm (~2100K) instead of warm white. One sheet covers ~9 m.
 - **Quick test first:** a roll of 15 mm cream washi tape (a few euros at Flying Tiger or Action). It dims and softens the light; add a second layer if it's not enough. Less precise and a bit "papery", but it peels off without residue (rental-friendly).
