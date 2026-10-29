@@ -10,7 +10,7 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 | Extra lamp | E27 | 1 | |
 | Nice-looking chandelier-type bulbs | E14 | 7 | 6 needed plus 1 spare |
 | Extra lamp | E14 | 1 | |
-| Spot bulbs | GU10 | 15–21 | 12 spots plus spares |
+| Spot bulbs | GU10 SceneSwitch | 13 (buy 15) | 12 spots + spares. Reuse the old working GU10s elsewhere in the house |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
 | Warming/dimming film for the LED strip | 1.5 cm strips | 1 | See below |
@@ -29,12 +29,14 @@ No dimmer, app or remote needed.
 
 | For | Bulb | Where in Spain | Qty | Approx. price |
 |---|---|---|---|---|
-| Ceiling spots | SceneSwitch GU10 50W, clear, 3-pack | MediaMarkt.es | 5–7 packs (15–21 bulbs) | €6.60 each → ~€99–139 |
+| Ceiling spots | SceneSwitch GU10 50W, clear, 3-pack | MediaMarkt.es (cheapest found in Spain) | 5 packs = 15 bulbs | €6.60 each → ~€99 |
 | Chandelier + extra lamp | SceneSwitch E14 filament candle, 5W / 470 lm | Amazon.es (ASIN B07FK64MMZ) | 8 | price not shown; ~€7–12 each elsewhere → ~€55–95 |
 | Above the table + extra lamp | SceneSwitch E27 60W (frosted, not filament) | MediaMarkt.es | 4 | €7.71 each → ~€31 |
 
 - **E27:** I couldn't find the clear filament E27 SceneSwitch in a Spanish shop. The frosted one is fine if lampshades hide the bulbs. If the bulbs show, search Amazon.es for EAN 8718699772130 (clear filament version).
-- Replace all 12 spots, including the 6 that still work, so they all match and step together.
+- Replace all 12 spots so they all step together. Use the 6 old bulbs that still work as replacements elsewhere in the house.
+- **GU10 price check:** MediaMarkt.es 3-pack (€6.60 per bulb) is the cheapest found in Spain. A single at Lampara.es costs €11.90 plus shipping, so a 5th 3-pack is cheaper than 4 packs + 1 single. Goedkopermetled.nl (NL) sells the 3-pack for €16.99 (€5.66 per bulb), but shipping to Spain is unconfirmed and the saving would be ~€15 at most.
+- **Dining table lamp:** 3 × E27 → 3 × SceneSwitch E27 (all three, since they share a switch).
 - **Don't** use SceneSwitch bulbs on a wall dimmer.
 - When one breaks, replace it with SceneSwitch again.
 
