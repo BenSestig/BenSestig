@@ -15,28 +15,35 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
 | Warming/dimming film for the LED strip | 1.5 cm strips | 1 | See below |
 
-## Bulbs: IKEA order (SOLHETTA everywhere)
+## Bulbs: order
 
-All warm white 2700K. **None of these SOLHETTA bulbs is dimmable** (IKEA: "The light bulb is not dimmable"). That's fine until a dimmer is installed.
+**IKEA (SOLHETTA)** for everything except the mirror lamps. All warm white 2700K. **None of these SOLHETTA bulbs is dimmable** (IKEA: "The light bulb is not dimmable"). That's fine until a dimmer is installed.
 
 | For | Bulb | Art. no. | Qty | Price |
 |---|---|---|---|---|
 | Ceiling spots | SOLHETTA GU10 230 lm, 3-pack | 405.840.81 | 5 packs (15) | €17.45 |
-| Mirror lamps | SOLHETTA E14 250 lm chandelier/**opal**, 2-pack | 305.840.34 | **4 packs** (8, incl. spares) | €9.96 |
 | Extra E14 lamp | SOLHETTA E14 250 lm globe opal, 2-pack | 005.839.84 | 1 pack | €2.49 |
 | Dining table lamp + extra E27 lamp | SOLHETTA E27 250 lm globe opal, 45 mm, 2-pack | 205.959.62 | 2 packs (4) | €5.98 |
-| **Total** | | | | **€35.88** |
+| **IKEA total** | | | | **€25.92** |
 
-- **Mirror lamps spare:** 3 packs of candles give exactly 6, with no spare. The 4th pack (+€2.49) covers the reserve.
+**Barcelonaled.com** for the mirror lamps ("candle light"):
+
+| For | Bulb | SKU | Qty | Price |
+|---|---|---|---|---|
+| Mirror lamps (2 × 3) | E14 C35 filament candle 4W "Vintage": **2200K**, gold-tinted glass, 320 lm, not dimmable | BFD1-C35E14-BC | 7 (6 + 1 spare) | 7 × €0.95 + €5 shipping = **€11.65** |
+
+**Grand total: ~€37.57**
+
+- **Barcelonaled shipping:** €5 under €19.95, free above. Delivery 24–48h. 3-year warranty.
 - **Dining table lamp:** 3 × 250 lm = 750 lm, cosy but on the dim side for eating.
 
-### Mirror lamps: opal, not clear
+### Mirror lamps: candle light, low glare
 
-- **250 lm per bulb** is the old 25W candle level, the usual soft setting for sconces. Each lamp gives ~750 lm, about one 60W bulb. That's normal next to a mirror.
-- **What feels "super bright" is glare:** a bare clear filament at eye level, doubled by its reflection in the mirror.
-- **The fix:** the **opal** candle spreads the same light over the whole glass, so it looks much softer. Same price as the clear one.
-- **Nicer-looking alternative:** IKEA LUNNOM E14 210 lm chandelier, **brown-tinted** clear glass (art. 605.392.38). 2200K, dimmable, €3.99 each (~€28 for 7). It keeps the filament look with less glare.
-- **"Candle light" colour:** IKEA calls it **warm glow (2200K)**. It's only in the LUNNOM range; SOLHETTA is always 2700K warm white.
+- **250–320 lm per bulb** is the old 25–40W candle level, normal for wall lamps next to a mirror.
+- **What feels "super bright" is glare:** a bare clear filament at eye level, doubled by its reflection in the mirror. The gold-tinted glass and 2200K colour soften that.
+- The Barcelonaled bulb gives a bit more light than SOLHETTA (320 vs 250 lm).
+- **Fallback if it's too bright:** IKEA SOLHETTA E14 250 lm chandelier **opal** (305.840.34), €2.49 per 2-pack. Soft, but normal 2700K warm white rather than candle light.
+- **IKEA's own candle-light option:** LUNNOM E14 210 lm, brown glass (605.392.38). 2200K, €3.99 each (~€28 for 7).
 
 ### Dining table lamp: dimmable now?
 
