@@ -38,7 +38,22 @@ No dimmer, app or remote needed.
 - **Don't** use SceneSwitch bulbs on a wall dimmer.
 - When one breaks, replace it with SceneSwitch again.
 
-**Estimated total: ~€185–265**
+**Estimated total if everything is SceneSwitch: ~€185–265**
+
+### Chosen plan: SceneSwitch only in the dining and seating area (~9 bulbs)
+
+Everything else gets ordinary warm white (2700K) bulbs, e.g. IKEA SOLHETTA. Prices are from IKEA's island stores; mainland prices may differ slightly.
+
+| Part | Price |
+|---|---|
+| 9 × SceneSwitch | €6.60 (GU10) to ~€12 (E14) each → **~€60–95** |
+| Ordinary bulbs: SOLHETTA GU10 345 lm | ~€3.50 each |
+| Ordinary bulbs: SOLHETTA E27 806 lm | ~€5.50–6 per 2-pack |
+| Ordinary bulbs: E14 | SOLHETTA (frosted) ~€2–5, or a clear filament candle from Garza.es €5.80 if they should look nice |
+| All ordinary bulbs together | **~€50–90** |
+| **Total** | **~€115–180** |
+
+- **Split by switch:** every bulb on the same switch must be SceneSwitch, otherwise only some of them dim.
 
 ### Alternative: a remote (IKEA KAJPLATS + BILRESA)
 
