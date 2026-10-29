@@ -13,7 +13,7 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 | Extra lamp | E14 | 1 | |
 | Round rug (under the dining table) | Ø 240 cm | 1 | 200 cm at the very least |
 | Rug (by the sofa) | 240 × 160 cm | 1 | Check: is this still needed now the table rug is round? |
-| Film for the LED strip | LEE 204 + LEE 209 gel sheets | 1 sheet each | Cut into 1.5 cm strips; see below |
+| Paper for the LED strip | Warm-coloured tissue paper (and/or baking paper) + household tape | 1 | Cut into ~1.5 cm strips; see below |
 
 ## Bulbs: order
 
@@ -111,27 +111,25 @@ _Notes taken 2026-10-29 while walking through the apartment. Shops are in Spain.
 
 ## LED strip (too bright and too cold)
 
-Goal: about 70% dimmer and warmer, with 1.5 cm strips over the LEDs.
+Goal: about 70% dimmer and warmer, with ~1.5 cm strips over the LEDs.
 
-**Recommendation: lighting gel.** This is the heat-proof filter film used on stage and studio lights, cut into 1.5 cm strips and laid over the LEDs.
+**Plan: coloured paper + a bit of household tape.**
 
-| Gel | What it does | Where | Price |
-|---|---|---|---|
-| **LEE 204 Full CTO** (orange) | Warms cold white to ~3200K; lets through ~55% | Thomann.es, 25 × 122 cm sheet | €6.30 (currently "on request") |
-| **LEE 209 0.3 ND** (grey) | Lets through 50%, no colour change | Thomann or any photo/theatre shop | Check the price |
-
-- **Result:** together they let ~28% through, so the strip ends up **~70% dimmer and warm white**.
-- **Coverage:** one sheet of each gives ~16 strips of 1.5 × 122 cm, about 19 m of LED strip.
-- **How:** cut strips the width of standard tape (~1.5–1.9 cm) with a ruler and a cutter. Lay a 204 and a 209 strip on top of each other over the LEDs, and fix only the ends with ordinary clear tape.
+- **Which paper:** thin, see-through paper in a warm colour (yellow, orange, peach or cream).
+  - **Tissue paper** (papel de seda): very cheap, many colours. Add layers until the brightness is right, probably 2–3.
+  - **Baking paper** (papel de horno, any supermarket): heat-proof and spreads the light evenly, but adds no colour. Combine it with one layer of orange or yellow tissue paper for warmth.
+  - **Avoid:** thick printer or craft paper, which blocks too much light and looks blotchy. White adds no warmth, and pink or red gives an odd tint.
+- **How:** cut strips the width of standard tape (~1.5–1.9 cm). Lay them over the LEDs and tape only the ends (plus every ~50 cm on long runs), not over the LEDs themselves.
+- **Test in the evening:** start with one layer and add more until it looks right.
 - **Is covering it safe?** Yes, for a normal LED strip.
-  - It gets warm, not hot, so gel and tape won't burn. LEE gel is made for hot stage lights.
+  - It gets warm, not hot; paper only catches fire at well over 200°C.
   - **Touch test:** after an hour on, if you can keep a finger on the strip, covering it is fine. If it's too hot to touch, don't cover it; use a dimmer instead.
   - Don't cover the strip's power adapter.
-  - Ordinary clear tape can yellow and get sticky from the warmth over time (residue in a rental), so only tape the ends.
-- **Same product, other brand:** Rosco calls it "Full CTO" (Rosco 3407 / E-Colour 204).
-- **One-product variant:** two layers of LEE 204 and no 209. Also ~70% dimmer, but candle-warm (~2100K) instead of warm white. One sheet covers ~9 m.
-- **Quick test first:** a roll of 15 mm cream washi tape (a few euros at Flying Tiger or Action). It dims and softens the light; add a second layer if it's not enough. Less precise and a bit "papery", but it peels off without residue (rental-friendly).
-- **If the strip is 12/24V with an accessible plug:** an inline dimmer dims it properly. A single 1/2 CTO gel (LEE 205) then handles the warmth.
+  - Household tape can yellow and get sticky from the warmth over time (residue in a rental), so only tape the ends.
+- **If paper isn't good enough:** lighting gel.
+  - LEE 204 Full CTO: orange, warms the light, lets ~55% through. €6.30 per 25 × 122 cm sheet at Thomann.es.
+  - LEE 209 0.3 ND: grey, lets 50% through.
+  - 204 + 209 together → ~70% dimmer and warm white. Two layers of 204 alone → ~70% dimmer and candle-warm.
 
 ## Other
 
