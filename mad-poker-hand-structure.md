@@ -50,7 +50,7 @@ _How every hand in a video is built. For Ben (script and VO) and Karim (edit and
 
 Big = river as key moment + preflop as second decision + table moment.
 
-**Hand card (graphic):** Ben60 (SB) 99 · Tight reg (LJ) · LAG (BTN) · loose passive (BB) · [stake]
+**Hand card (graphic):** Ben60 (SB) 99 · Tight reg (LJ) · LAG (BTN) · loose passive (BB) · €1/€3
 
 **Preflop (second decision):**
 > "Nines in the small blind. A tight reg opens, a loose aggressive player calls on the button, and the big blind is loose and passive. Those two are my targets. A 3-bet only isolates the reg, the one player I don't want. So I call."
@@ -69,16 +69,22 @@ Big = river as key moment + preflop as second decision + table moment.
 
 **VO length:** ~167 words. The Big budget is ~170 (100 core + 2 × 35).
 
-### Still open for the 99 graphic
+### The 99 graphic
 
-- [ ] The stake.
-- [ ] The opener: LJ or U7.
-- [ ] Which flop cards were hearts.
+The graphic follows what Ben says in the VO: c-bet 13, check-raise to 70, bet 140, all-in 300.
 
-**What the script already fixes for the board:**
+| What | Value | Source |
+|---|---|---|
+| Stake | €1/€3 | Hand overview V3_H06 (vlog 3, hand 6, 15:45) |
+| Ben60 | 9♠ 9♦ | Hand overview |
+| Flop | K♥ 8♦ 9♥ (the K and the 9 are hearts) | Hand overview |
+| Turn | 3♠ | Hand overview |
+| River | 3♥ | Hand overview |
+| Villain's hand | A♥ K♣ (he says it, not shown) | Hand overview |
 
-- **Turn:** a 3, not a heart. The river 3 of hearts only "fills up" the set of nines if the turn was a 3. (A K, 9 or 8 on the turn would have filled up already.)
-- **Flop:** exactly two of K, 9, 8 are hearts. The river is the third heart, and the flush only "gets there" on the river.
+- [x] The stake: €1/€3.
+- [x] Which flop cards were hearts: K♥ and 9♥.
+- [ ] The opener: LJ or U7? The hand overview has the opener in the HJ. Ben decides.
 
 ## Template for a new hand
 
