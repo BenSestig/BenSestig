@@ -80,7 +80,7 @@ The graphic follows what Ben says in the VO: c-bet 13, check-raise to 70, bet 14
 | Flop | K♥ 8♦ 9♥ (the K and the 9 are hearts) | Hand overview |
 | Turn | 3♠ | Hand overview |
 | River | 3♥ | Hand overview |
-| Villain's hand | A♥ K♣ (he says it, not shown) | Hand overview |
+| Villain's hand | A♥ K♠ (he says it, not shown) | Voiceover (Ben, 12 November: follow the voiceover, not the hand overview's K♣) |
 
 - [x] The stake: €1/€3.
 - [x] Which flop cards were hearts: K♥ and 9♥.
