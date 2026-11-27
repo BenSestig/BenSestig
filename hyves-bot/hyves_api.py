@@ -11,7 +11,7 @@ Usage:
   python3 hyves_api.py me                     # show the logged-in account
   python3 hyves_api.py groups [ZOEKTERM]      # list/search hyves (groups)
   python3 hyves_api.py posts GROUP_ID [N]     # latest N posts in a hyve
-  python3 hyves_api.py post GROUP_ID FILE     # post the text in FILE to a hyve
+  python3 hyves_api.py post GROUP_ID FILE [AFBEELDING ...]  # post text in FILE (+ images)
   python3 hyves_api.py raw METHOD PATH [JSON] # any API call, for debugging
 """
 import base64
@@ -116,9 +116,17 @@ def call(method, path, body=None, params=None):
     return r.json() if r.content else None
 
 
-def post_to_group(group_id, text):
-    """Places a text post in a hyve. Request shape taken from the web app (CreatePostDto)."""
-    return call("POST", f"groups/{group_id}/posts", body={"text": text})
+def post_to_group(group_id, text, images=()):
+    """Places a post in a hyve, optionally with images (paths to PNG/JPEG files).
+    Request shape taken from the web app: CreatePostDto with ImageAttachmentDto(base64Data, filename)."""
+    body = {"text": text}
+    if images:
+        body["images"] = []
+        for path in images:
+            with open(path, "rb") as f:
+                body["images"].append({"base64Data": base64.b64encode(f.read()).decode(),
+                                       "filename": os.path.basename(path)})
+    return call("POST", f"groups/{group_id}/posts", body=body)
 
 
 def _print(obj):
@@ -141,7 +149,7 @@ def main(argv):
     elif cmd == "post":
         with open(args[1]) as f:
             text = f.read().strip()
-        _print(post_to_group(args[0], text))
+        _print(post_to_group(args[0], text, args[2:]))
     elif cmd == "raw":
         _print(call(args[0].upper(), args[1], body=json.loads(args[2]) if len(args) > 2 else None))
     else:

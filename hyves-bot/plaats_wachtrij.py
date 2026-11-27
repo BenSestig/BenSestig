@@ -14,8 +14,8 @@ Usage:
   python3 plaats_wachtrij.py wachtrij.json --droog                # show schedule only
 
 wachtrij.json is a list of:
-  {"label": "voetbal", "hyve_id": "...", "tekst": "...", "uiterlijk": "11:45"}
-("uiterlijk" is optional). Results are written to wachtrij.json.resultaat.json.
+  {"label": "voetbal", "hyve_id": "...", "tekst": "...", "uiterlijk": "11:45", "afbeeldingen": ["kaart.png"]}
+("uiterlijk" and "afbeeldingen" are optional). Results are written to wachtrij.json.resultaat.json.
 """
 import datetime as dt
 import json
@@ -86,7 +86,7 @@ def main(path, dry=False, window=DEFAULT_WINDOW):
         if wait > 0:
             time.sleep(wait)
         try:
-            res = hyves_api.post_to_group(item["hyve_id"], item["tekst"])
+            res = hyves_api.post_to_group(item["hyve_id"], item["tekst"], item.get("afbeeldingen", ()))
             results.append({"label": item.get("label"), "geplaatst": dt.datetime.now(AMS).isoformat(), "antwoord": res})
             print(f"{dt.datetime.now(AMS):%H:%M:%S}  geplaatst: {item.get('label', '')}", flush=True)
         except SystemExit as e:  # keep going with the other posts

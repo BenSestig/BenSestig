@@ -35,6 +35,8 @@ NAMES = {
     "Ajax Amsterdam": "Ajax", "PSV Eindhoven": "PSV", "Feyenoord Rotterdam": "Feyenoord",
     "AZ Alkmaar": "AZ", "Helmond Spor": "Helmond Sport", "Maastricht": "MVV Maastricht",
     "Emmen": "FC Emmen", "Dordrecht": "FC Dordrecht", "Groningen": "FC Groningen",
+    "Sparta Prague": "Sparta Praag", "Slavia Prague": "Slavia Praag", "Bayern Munich": "Bayern München",
+    "Inter Milan": "Inter", "AC Milan": "AC Milan", "Sporting CP": "Sporting Lissabon", "Benfica": "Benfica",
 }
 
 

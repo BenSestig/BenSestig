@@ -41,6 +41,12 @@ Terugblik en vooruitblik zijn **twee aparte berichten**.
   - Eerste aftrap **om 18:00 of later**: niet in de ochtendronde, maar in de **avondronde**
     (aparte geplande sessie rond 16:40, venster 17:00–19:00). De avondronde doet alleen dit:
     vooruitblik maken en plaatsen met `plaats_wachtrij.py ... --venster 17:00-19:00`, verder niets.
+- Voeg aan elk voetbalbericht een eigen kaart toe als afbeelding: `python3 kaart.py JJJJ-MM-DD
+  /tmp/kaart.png ["Titel"]` (uitslagen van gisteren bij de terugblik, programma van vandaag bij
+  de vooruitblik; titel bijv. "Europese donderdag" of "Vanavond op het programma"). Bekijk de kaart
+  even (Read) voordat je hem gebruikt, en zet het pad in `"afbeeldingen"` in de wachtrij.
+- Gebruik **nooit** persfoto's, clublogo's of andere afbeeldingen van internet: daar rust
+  auteursrecht op. Alleen zelfgemaakte afbeeldingen zoals de kaart.
 - Sluit **elk** voetbalbericht af met een prikkelende vraag waar mensen hun mening onder kwijt
   kunnen ("Terechte rode kaart of niet?", "Wie wordt kampioen?", "Jullie voorspelling voor de
   Klassieker?").
