@@ -24,6 +24,7 @@ Hulpscripts voor een dagelijkse geplande Claude-taak die berichten plaatst op Hy
 | `youtube.py KANAAL` | De nieuwste video's van een YouTube-kanaal (met Shorts gemarkeerd). |
 | `kaart.py JJJJ-MM-DD uit.png` | Maakt een eigen afbeelding met de uitslagen of het programma van die dag. |
 | `plaats_wachtrij.py wachtrij.json` | Plaatst berichten op willekeurige momenten tussen 11:00 en 13:00 (piek rond 12:00). |
+| `eenmalig/` | Losse berichten die Ben aanlevert (tekst + foto's), geplaatst op de aangegeven datum. |
 | `config.json` | Namen van de hyves, YouTube-kanaal, wat over te slaan, schema voor de oude video's. |
 | `DAGELIJKSE_TAAK.md` | De instructies die de dagelijkse geplande sessie volgt. |
 

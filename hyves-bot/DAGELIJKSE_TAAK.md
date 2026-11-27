@@ -122,6 +122,15 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
   Nooit hetzelfde nieuws twee keer.
 - Geen afbeeldingen van nieuwssites gebruiken (auteursrecht).
 
+## 6b. Eenmalige berichten
+
+- In `eenmalig/` staan losse berichten die Ben zelf heeft aangeleverd (bijv. een LinkedIn-post),
+  als JSON: `hyve` (sleutel uit `config.json` → `hyves`), `label`, `datum`, `tekst`, `afbeeldingen`
+  (paden relatief aan `hyves-bot/`).
+- Plaats elk bericht waarvan `datum` vandaag of eerder is en dat nog niet in die hyve staat
+  (vergelijk de eerste regel van de tekst met de recente berichten). Tekst ongewijzigd laten.
+- Deze berichten gelden niet voor het maximum aantal nieuwsberichten per dag.
+
 ## 7. Plaatsen
 
 1. Zet alle berichten in `/tmp/wachtrij.json` (formaat: zie bovenaan `plaats_wachtrij.py`), met
