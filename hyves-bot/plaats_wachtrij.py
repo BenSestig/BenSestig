@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Places a queue of posts on Hyves at random, human-looking moments.
 
-Every post gets its own random time between 11:00 and 13:00 (Amsterdam time),
-drawn from a triangular distribution that peaks at 12:00. Posts are at least
+Every post gets its own random time inside a window (default 11:00-13:00,
+Amsterdam time), drawn from a triangular distribution that peaks in the middle
+of the window (12:00 for the default). Posts are at least
 MIN_GAP minutes apart, never scheduled in the past, and never after the post's
 optional "uiterlijk" (latest) time. The script then waits and posts each one.
 
 Usage:
-  python3 plaats_wachtrij.py wachtrij.json          # schedule and post
-  python3 plaats_wachtrij.py wachtrij.json --droog  # only show the schedule
+  python3 plaats_wachtrij.py wachtrij.json                       # 11:00-13:00
+  python3 plaats_wachtrij.py wachtrij.json --venster 17:00-19:00  # other window
+  python3 plaats_wachtrij.py wachtrij.json --venster nu-10:30     # from now
+  python3 plaats_wachtrij.py wachtrij.json --droog                # show schedule only
 
 wachtrij.json is a list of:
   {"label": "voetbal", "hyve_id": "...", "tekst": "...", "uiterlijk": "11:45"}
@@ -24,18 +27,18 @@ from zoneinfo import ZoneInfo
 import hyves_api
 
 AMS = ZoneInfo("Europe/Amsterdam")
-START, PEAK, END = dt.time(11, 0), dt.time(12, 0), dt.time(13, 0)
+DEFAULT_WINDOW = "11:00-13:00"
 MIN_GAP = dt.timedelta(minutes=7)
 
 
-def _sample(queue, lo, at):
+def _sample(queue, lo, peak):
     planned = []
     for item in queue:
         hi = item["_hi"]
         if hi <= lo:  # window already passed: post soon
             when = lo + dt.timedelta(seconds=random.randint(0, 240))
         else:
-            mode = min(max(at(PEAK), lo), hi)
+            mode = min(max(peak, lo), hi)
             when = dt.datetime.fromtimestamp(random.triangular(lo.timestamp(), hi.timestamp(), mode.timestamp()), AMS)
         planned.append([when.replace(microsecond=0), item])
     planned.sort(key=lambda p: p[0])
@@ -45,15 +48,19 @@ def _sample(queue, lo, at):
     return planned
 
 
-def plan(queue, now):
+def plan(queue, now, window=DEFAULT_WINDOW):
     at = lambda t: dt.datetime.combine(now.date(), t, AMS)
-    lo = max(at(START), now + dt.timedelta(minutes=2))
+    start, end = window.split("-")
+    soon = now + dt.timedelta(minutes=2)
+    first = soon if start == "nu" else at(dt.time.fromisoformat(start))
+    end = at(dt.time.fromisoformat(end))
+    lo, peak = max(first, soon), first + (end - first) / 2
     for item in queue:
-        item["_hi"] = at(END)
+        item["_hi"] = end
         if item.get("uiterlijk"):
             item["_hi"] = min(item["_hi"], at(dt.time.fromisoformat(item["uiterlijk"])))
     for _ in range(200):  # redraw until every post with a deadline makes it in time
-        planned = _sample(queue, lo, at)
+        planned = _sample(queue, lo, peak)
         if all(when <= max(item["_hi"], lo + dt.timedelta(minutes=5)) for when, item in planned):
             return planned
     # fallback: earliest deadline first, MIN_GAP apart
@@ -64,10 +71,10 @@ def plan(queue, now):
     return planned
 
 
-def main(path, dry=False):
+def main(path, dry=False, window=DEFAULT_WINDOW):
     with open(path) as f:
         queue = json.load(f)
-    planned = plan(queue, dt.datetime.now(AMS))
+    planned = plan(queue, dt.datetime.now(AMS), window)
     for when, item in planned:
         print(f"{when:%H:%M:%S}  {item.get('label', '')}: {item['tekst'][:70]!r}", flush=True)
     if dry:
@@ -92,4 +99,5 @@ def main(path, dry=False):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
-    main(sys.argv[1], dry="--droog" in sys.argv)
+    window = sys.argv[sys.argv.index("--venster") + 1] if "--venster" in sys.argv else DEFAULT_WINDOW
+    main(sys.argv[1], dry="--droog" in sys.argv, window=window)

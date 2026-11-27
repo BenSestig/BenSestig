@@ -27,16 +27,20 @@ Gegevens: `python3 voetbal.py` (vandaag) en `python3 voetbal.py JJJJ-MM-DD` (eer
 uitslagen, doelpunten en rode kaarten). Alleen clubs uit de Eredivisie en Eerste Divisie tellen
 (competitie, KNVB Beker, Europees).
 
-- **Vandaag wedstrijden?** Eén bericht met:
-  - de wedstrijden van vandaag, per competitie, met aftraptijd ("19:00 Ajax – PSV"), en wat de dag
-    bijzonder maakt (topper, derby, Europese avond, bekerronde, degradatie-/titelstrijd);
-  - als er gisteren gespeeld is: een korte terugblik (zie hieronder).
-  - Zet `"uiterlijk"` op 30 minuten vóór de eerste aftrap (formaat `"HH:MM"`).
-- **Vandaag geen wedstrijden, gisteren wel?** Eén terugblik-bericht.
-- **Terugblik**: uitslagen (bij veel wedstrijden alleen de opvallendste) en vooral de
+Terugblik en vooruitblik zijn **twee aparte berichten**.
+
+- **Terugblik** (ochtendronde, venster 11:00–13:00): als er gisteren gespeeld is. Inhoud:
+  uitslagen (bij veel wedstrijden alleen de opvallendste) en vooral de
   **spraakmakendste momenten**: VAR-beslissingen, rode kaarten, wereldgoals, blunders, late
   winnaars, uitspraken van trainers/spelers, onrust bij een club. Zoek dat op het web (WebSearch,
   bijv. NOS, VI, Voetbalzone, ESPN NL) en neem alleen op wat meerdere bronnen bevestigen.
+- **Vooruitblik** op de wedstrijden van vandaag: per competitie, met aftraptijd
+  ("19:00 Ajax – PSV"), en wat de dag bijzonder maakt (topper, derby, Europese avond, bekerronde,
+  degradatie-/titelstrijd). Zet `"uiterlijk"` op 30 minuten vóór de eerste aftrap (`"HH:MM"`).
+  - Eerste aftrap **vóór 18:00**: in de ochtendronde (venster 11:00–13:00).
+  - Eerste aftrap **om 18:00 of later**: niet in de ochtendronde, maar in de **avondronde**
+    (aparte geplande sessie rond 16:40, venster 17:00–19:00). De avondronde doet alleen dit:
+    vooruitblik maken en plaatsen met `plaats_wachtrij.py ... --venster 17:00-19:00`, verder niets.
 - Sluit **elk** voetbalbericht af met een prikkelende vraag waar mensen hun mening onder kwijt
   kunnen ("Terechte rode kaart of niet?", "Wie wordt kampioen?", "Jullie voorspelling voor de
   Klassieker?").
