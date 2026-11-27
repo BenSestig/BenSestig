@@ -1,0 +1,23 @@
+{
+  "hyves": {
+    "voetbal": "Voetbal",
+    "poker": "Poker"
+  },
+  "youtube": {
+    "kanaal": "https://www.youtube.com/@Poker-Sixty",
+    "overslaan": {
+      "shorts": true,
+      "titel_bevat": ["home game"]
+    },
+    "nieuw_vanaf": "2026-11-27",
+    "oude_videos_wekelijks": [
+      {"datum": "2026-11-27", "id": "87WHVA142yc", "titel": "QQ all-in preflop voor MONSTERPOT? | MPC Afl. 1"},
+      {"datum": "2026-12-04", "id": "QjJV9B8sumg", "titel": "Ik speel als een KRANT! | MPC Afl. 2"},
+      {"datum": "2026-12-11", "id": "DTmsMMzFWkA", "titel": "AA in eerste hand! | MPC Afl. 3"},
+      {"datum": "2026-12-18", "id": "tZQcVRcXZOs", "titel": "Ik maak QUADS en word geraised!! | MPC Afl. 4"}
+    ]
+  },
+  "poker": {
+    "minimum_prijzengeld_eur": 250000
+  }
+}

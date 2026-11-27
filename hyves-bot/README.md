@@ -15,7 +15,10 @@ Hulpscripts voor een dagelijkse geplande Claude-taak die berichten plaatst op Hy
 | --- | --- |
 | `hyves_api.py` | Inloggen op Hyves en de API aanroepen (`me`, `groups`, `posts`, `post`, `raw`). |
 | `voetbal.py [JJJJ-MM-DD]` | Wedstrijden van die dag met een Eredivisie- of Eerste Divisie-club (bron: ESPN), tijden in Nederlandse tijd. |
-| `youtube.py KANAAL` | De nieuwste video's van een YouTube-kanaal. |
+| `youtube.py KANAAL` | De nieuwste video's van een YouTube-kanaal (met Shorts gemarkeerd). |
+| `plaats_wachtrij.py wachtrij.json` | Plaatst berichten op willekeurige momenten tussen 11:00 en 13:00 (piek rond 12:00). |
+| `config.json` | Namen van de hyves, YouTube-kanaal, wat over te slaan, schema voor de oude video's. |
+| `DAGELIJKSE_TAAK.md` | De instructies die de dagelijkse geplande sessie volgt. |
 
 ## Inloggegevens
 

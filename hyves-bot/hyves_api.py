@@ -116,6 +116,11 @@ def call(method, path, body=None, params=None):
     return r.json() if r.content else None
 
 
+def post_to_group(group_id, text):
+    """Places a text post in a hyve. Request shape taken from the web app (CreatePostDto)."""
+    return call("POST", f"groups/{group_id}/posts", body={"text": text})
+
+
 def _print(obj):
     print(json.dumps(obj, indent=2, ensure_ascii=False))
 
@@ -136,7 +141,7 @@ def main(argv):
     elif cmd == "post":
         with open(args[1]) as f:
             text = f.read().strip()
-        _print(call("POST", f"groups/{args[0]}/posts", body={"text": text}))
+        _print(post_to_group(args[0], text))
     elif cmd == "raw":
         _print(call(args[0].upper(), args[1], body=json.loads(args[2]) if len(args) > 2 else None))
     else:

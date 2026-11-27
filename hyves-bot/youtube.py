@@ -6,8 +6,9 @@ Tries the channel's RSS feed first; when YouTube refuses it (it often answers
 
 Usage:
   python3 youtube.py CHANNEL    # CHANNEL = channel URL, @handle or UC... channel id
-Prints JSON list: [{"id", "title", "url", "published"}]. "published" is an ISO
-date from RSS, or YouTube's relative text (e.g. "3 dgn geleden") from the page.
+Prints JSON list: [{"id", "title", "url", "published", "short"}]. "published" is
+an ISO date from RSS, or YouTube's relative text (e.g. "3 dgn geleden") from the
+page; "short" is true for YouTube Shorts.
 """
 import json
 import re
@@ -80,9 +81,19 @@ def from_page(cid):
     return out
 
 
+def is_short(vid):
+    """YouTube serves /shorts/ID for Shorts and redirects to /watch for normal videos."""
+    r = requests.get(f"https://www.youtube.com/shorts/{vid}", headers=UA, cookies=COOKIES,
+                     allow_redirects=False, timeout=30)
+    return r.status_code == 200
+
+
 def videos(channel):
     cid = channel_id(channel)
-    return from_rss(cid) or from_page(cid)
+    vids = from_rss(cid) or from_page(cid)
+    for v in vids:
+        v["short"] = is_short(v["id"])
+    return vids
 
 
 if __name__ == "__main__":
