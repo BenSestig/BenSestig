@@ -44,6 +44,40 @@ def _save(tok):
     return tok
 
 
+def _hidden_fields(page):
+    form = {}
+    for tag in re.findall(r'<input[^>]*type="hidden"[^>]*>', page):
+        name = re.search(r'name="([^"]+)"', tag)
+        value = re.search(r'value="([^"]*)"', tag)
+        if name:
+            form[name.group(1)] = html.unescape(value.group(1)) if value else ""
+    return form
+
+
+def _page_text(page):
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", "", page, flags=re.S)
+    return " ".join(re.sub(r"<[^>]+>", " ", text).split())
+
+
+def _auto_submit(s, r):
+    """The 'complete registration' page: a browser submits it automatically when
+    there is nothing to fill in. Do the same, but stop when the page asks for
+    real input (personal details, accepting terms) - that is for Ben to do."""
+    visible = []
+    for tag in re.findall(r"<(?:input|select|textarea)[^>]*>", r.text):
+        typ = (re.search(r'type="([^"]+)"', tag) or [None, "text"])[1]
+        name = (re.search(r'name="([^"]+)"', tag) or [None, ""])[1]
+        if typ not in ("hidden", "submit", "button") and name:
+            visible.append(name)
+    if visible:
+        raise SystemExit("Hyves vraagt om de registratie af te ronden met deze velden: "
+                         f"{', '.join(visible)}. Ben moet dit zelf eenmalig doen. Pagina: {_page_text(r.text)[:300]}")
+    action = re.search(r'<form[^>]*action="([^"]*)"', r.text)
+    url = urllib.parse.urljoin(r.url, html.unescape(action.group(1)) if action else r.url)
+    r = s.post(url, data=_hidden_fields(r.text), allow_redirects=False, timeout=30)
+    return r, r.headers.get("Location", "")
+
+
 def login():
     user, password = os.environ.get("HYVES_EMAIL"), os.environ.get("HYVES_PASSWORD")
     if not user or not password:
@@ -57,19 +91,27 @@ def login():
         client_id=CLIENT_ID, response_type="code", scope="openid offline_access",
         redirect_uri=REDIRECT_URI, code_challenge=challenge, code_challenge_method="S256", state=state))
     r.raise_for_status()
-    form = {}
-    for tag in re.findall(r'<input[^>]*type="hidden"[^>]*>', r.text):
-        name = re.search(r'name="([^"]+)"', tag)
-        value = re.search(r'value="([^"]*)"', tag)
-        if name:
-            form[name.group(1)] = html.unescape(value.group(1)) if value else ""
+    form = _hidden_fields(r.text)
+    # what the login page's own JavaScript fills in a browser
+    form.update(timezone="Europe/Amsterdam", **{"metaData.device.name": "hyves-bot",
+                                                 "metaData.device.type": "BROWSER"})
     form.update(loginId=user, password=password)
     r = s.post(f"{AUTH}/oauth2/authorize", data=form, allow_redirects=False, timeout=30)
     loc = r.headers.get("Location", "")
+    for _ in range(5):  # follow intermediate pages the way a browser would
+        if r.status_code in (302, 303) and "code=" in loc:
+            break
+        if r.status_code in (302, 303) and loc:
+            r = s.get(urllib.parse.urljoin(AUTH, loc), allow_redirects=False, timeout=30)
+            loc = r.headers.get("Location", "")
+            continue
+        if r.status_code == 200 and "<form" in r.text and "complete-registration" in r.url:
+            r, loc = _auto_submit(s, r)
+            continue
+        break
     if r.status_code not in (302, 303) or "code=" not in loc:
-        text = re.sub(r"<script.*?</script>|<style.*?</style>", "", r.text, flags=re.S)
-        text = " ".join(re.sub(r"<[^>]+>", " ", text).split())
-        raise SystemExit(f"Inloggen mislukt (HTTP {r.status_code}): {text[:300]}")
+        raise SystemExit(f"Inloggen mislukt (HTTP {r.status_code}, {r.url if r.status_code == 200 else loc[:150]}): "
+                         f"{_page_text(r.text)[:400]}")
     q = urllib.parse.parse_qs(urllib.parse.urlparse(loc).query)
     if q.get("state", [""])[0] != state:
         raise SystemExit("Inloggen mislukt: state klopt niet")
