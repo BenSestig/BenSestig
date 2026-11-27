@@ -42,5 +42,10 @@
   "vastgoed": {
     "dagen": "maandag t/m vrijdag",
     "max_berichten_per_dag": 2
+  },
+  "hyve_ids": {
+    "voetbal": 904,
+    "poker": 896,
+    "vastgoed": 908
   }
 }

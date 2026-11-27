@@ -15,10 +15,12 @@ door `plaats_wachtrij.py`.
 3. Controleer de login: `python3 hyves_api.py me`. Faalt dit omdat `HYVES_EMAIL`/`HYVES_PASSWORD`
    ontbreken of het wachtwoord fout is: stop en meld dat in je eindbericht. Probeer niets anders.
 4. Lees `config.json`.
-5. Zoek de IDs van de hyves met precies de namen uit `config.json` ("Voetbal", "Poker", "Vastgoed") waar Ben
+5. De IDs van de hyves staan in `config.json` (`hyve_ids`). Controleer met `groups/ID` (via `raw GET`)
+   dat de naam klopt en Ben eigenaar is (`isOwner`). Klopt het niet, zoek de hyves dan op naam ("Voetbal", "Poker", "Vastgoed") waar Ben
    eigenaar van is (`python3 hyves_api.py groups`, eventueel `groups Voetbal`). Vind je ze niet
    eenduidig: post niets in die hyve en meld het.
-6. Haal de recente berichten van alle drie de hyves op (`python3 hyves_api.py posts ID 50`). Gebruik deze
+6. Haal de recente berichten van alle drie de hyves op (`python3 hyves_api.py posts ID 50`; de tekst
+   van een bericht staat in het veld `content`, de datum in `createdAt`). Gebruik deze
    om **nooit iets dubbel te plaatsen**: video-ID's/links, toernooien en nieuwsonderwerpen die al
    gepost zijn sla je over.
 
@@ -162,7 +164,9 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
    klaar is.
 4. Lees `/tmp/wachtrij.json.resultaat.json` en controleer met `posts ID` dat de berichten echt in de
    hyves staan.
-5. Faalt een bericht door een API-fout (bijv. HTTP 400 over het formaat): zoek uit wat de API wil
+5. De Hyves-API geeft soms een losse HTTP 500. Bij lezen probeert `hyves_api.py` het zelf opnieuw. Bij
+   plaatsen niet: kijk na een fout eerst met `posts ID 5` of het bericht er toch staat.
+6. Faalt een bericht door een API-fout (bijv. HTTP 400 over het formaat): zoek uit wat de API wil
    (`hyves_api.py raw`), en plaats het bericht daarna maximaal één keer opnieuw. Nooit
    testberichten plaatsen.
 

@@ -144,13 +144,28 @@ def token():
 
 
 def call(method, path, body=None, params=None):
-    for attempt in (1, 2):
+    """One API call. GETs are retried on the server's occasional HTTP 500;
+    POSTs never are (a retry could place a post twice: check `posts` first)."""
+    relogged = False
+    for attempt in range(3):
         tok = token()
-        r = requests.request(method, urllib.parse.urljoin(API, path.lstrip("/")), json=body, params=params,
-                             timeout=30, headers={"Authorization": f"Bearer {tok['access_token']}",
-                                                  "Accept": "application/json", "User-Agent": UA})
-        if r.status_code == 401 and attempt == 1:
+        try:
+            r = requests.request(method, urllib.parse.urljoin(API, path.lstrip("/")), json=body, params=params,
+                                 timeout=60, headers={"Authorization": f"Bearer {tok['access_token']}",
+                                                      "Accept": "application/json", "User-Agent": UA,
+                                                      "Accept-Language": "nl-NL,nl;q=0.9",
+                                                      "Origin": "https://hyves.nl", "Referer": "https://hyves.nl/"})
+        except requests.RequestException as e:
+            if method == "GET" and attempt < 2:
+                time.sleep(5)
+                continue
+            raise SystemExit(f"{method} {path} -> verbinding mislukt: {e}")
+        if r.status_code == 401 and not relogged:
             os.remove(CACHE)  # token rejected: log in again once
+            relogged = True
+            continue
+        if r.status_code >= 500 and method == "GET" and attempt < 2:
+            time.sleep(5 * (attempt + 1))
             continue
         break
     if r.status_code >= 400:
@@ -160,8 +175,9 @@ def call(method, path, body=None, params=None):
 
 def post_to_group(group_id, text, images=()):
     """Places a post in a hyve, optionally with images (paths to PNG/JPEG files).
-    Request shape taken from the web app: CreatePostDto with ImageAttachmentDto(base64Data, filename)."""
-    body = {"text": text}
+    Request shape taken from the web app: CreatePostDto with ImageAttachmentDto(base64Data, filename);
+    the text field is called `content`, as in the posts the API returns."""
+    body = {"content": text}
     if images:
         body["images"] = []
         for path in images:
