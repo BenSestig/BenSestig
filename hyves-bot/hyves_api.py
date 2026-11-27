@@ -173,11 +173,15 @@ def call(method, path, body=None, params=None):
     return r.json() if r.content else None
 
 
-def post_to_group(group_id, text, images=()):
-    """Places a post in a hyve, optionally with images (paths to PNG/JPEG files).
-    Request shape taken from the web app: CreatePostDto with ImageAttachmentDto(base64Data, filename);
-    the text field is called `content`, as in the posts the API returns."""
-    body = {"content": text}
+def post_to_group(group_id, text, images=(), link=None):
+    """Places a post in a hyve, optionally with images (paths to JPEG/PNG files) and a link.
+
+    Body as the web app builds it (CreatePostDto): content, link, taggedUserIds=[],
+    likesEnabled=true, commentsEnabled=true, images=[ImageAttachmentDto(base64Data, filename)];
+    null fields (id, visibility, location..., parentCommentId) are left out."""
+    body = {"content": text, "taggedUserIds": [], "likesEnabled": True, "commentsEnabled": True}
+    if link:
+        body["link"] = link
     if images:
         body["images"] = []
         for path in images:

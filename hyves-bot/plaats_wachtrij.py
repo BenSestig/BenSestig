@@ -14,8 +14,10 @@ Usage:
   python3 plaats_wachtrij.py wachtrij.json --droog                # show schedule only
 
 wachtrij.json is a list of:
-  {"label": "voetbal", "hyve_id": "...", "tekst": "...", "uiterlijk": "11:45", "afbeeldingen": ["kaart.png"]}
-("uiterlijk" and "afbeeldingen" are optional). Results are written to wachtrij.json.resultaat.json.
+  {"label": "voetbal", "hyve_id": "...", "tekst": "...", "uiterlijk": "11:45",
+   "afbeeldingen": ["foto.jpg"], "link": "https://..."}
+("uiterlijk", "afbeeldingen" and "link" are optional). A post whose images are
+refused with HTTP 400 is placed once more without them (400 = nothing created). Results are written to wachtrij.json.resultaat.json.
 """
 import datetime as dt
 import json
@@ -86,7 +88,16 @@ def main(path, dry=False, window=DEFAULT_WINDOW):
         if wait > 0:
             time.sleep(wait)
         try:
-            res = hyves_api.post_to_group(item["hyve_id"], item["tekst"], item.get("afbeeldingen", ()))
+            try:
+                res = hyves_api.post_to_group(item["hyve_id"], item["tekst"], item.get("afbeeldingen", ()),
+                                              item.get("link"))
+            except SystemExit as e:
+                # HTTP 400 means nothing was created, so trying once without images is safe
+                if "HTTP 400" not in str(e) or not item.get("afbeeldingen"):
+                    raise
+                print(f"{dt.datetime.now(AMS):%H:%M:%S}  afbeelding geweigerd, opnieuw zonder: {e}", flush=True)
+                res = hyves_api.post_to_group(item["hyve_id"], item["tekst"], (), item.get("link"))
+                res = {"zonder_afbeelding": True, "antwoord": res}
             results.append({"label": item.get("label"), "geplaatst": dt.datetime.now(AMS).isoformat(), "antwoord": res})
             print(f"{dt.datetime.now(AMS):%H:%M:%S}  geplaatst: {item.get('label', '')}", flush=True)
         except SystemExit as e:  # keep going with the other posts
