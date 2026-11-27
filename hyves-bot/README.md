@@ -1,4 +1,4 @@
-# Hyves-bot (voetbal & poker)
+# Hyves-bot (voetbal, poker & vastgoed)
 
 Hulpscripts voor een dagelijkse geplande Claude-taak die berichten plaatst op Hyves:
 
@@ -12,6 +12,8 @@ Hulpscripts voor een dagelijkse geplande Claude-taak die berichten plaatst op Hy
   - af en toe een interessante hand om over te discussiëren;
   - een bericht als een Nederlander een (live of online) toernooi wint met minimaal €250.000 prijzengeld;
   - een bericht bij grote ontwikkelingen in de pokerwereld.
+- **Vastgoed-hyve** (maandag t/m vrijdag): relevant vastgoednieuws, geschreven vanuit het
+  perspectief van een investeerder.
 
 ## Scripts
 

@@ -1,7 +1,8 @@
-# Dagelijkse taak: Hyves voetbal & poker
+# Dagelijkse taak: Hyves voetbal, poker & vastgoed
 
 Deze instructies zijn voor de geplande Claude-sessie die elke dag rond 10:40 (Nederlandse tijd)
-start. Doel: de hyves **Voetbal** en **Poker** van Ben levendig houden met nuttige berichten.
+start. Doel: de hyves **Voetbal**, **Poker** en **Vastgoed** van Ben levendig houden met nuttige
+berichten.
 De berichten worden tussen 11:00 en 13:00 op willekeurige momenten geplaatst (meestal rond 12:00)
 door `plaats_wachtrij.py`.
 
@@ -14,10 +15,10 @@ door `plaats_wachtrij.py`.
 3. Controleer de login: `python3 hyves_api.py me`. Faalt dit omdat `HYVES_EMAIL`/`HYVES_PASSWORD`
    ontbreken of het wachtwoord fout is: stop en meld dat in je eindbericht. Probeer niets anders.
 4. Lees `config.json`.
-5. Zoek de IDs van de hyves met precies de namen uit `config.json` ("Voetbal" en "Poker") waar Ben
+5. Zoek de IDs van de hyves met precies de namen uit `config.json` ("Voetbal", "Poker", "Vastgoed") waar Ben
    eigenaar van is (`python3 hyves_api.py groups`, eventueel `groups Voetbal`). Vind je ze niet
    eenduidig: post niets in die hyve en meld het.
-6. Haal de recente berichten van beide hyves op (`python3 hyves_api.py posts ID 50`). Gebruik deze
+6. Haal de recente berichten van alle drie de hyves op (`python3 hyves_api.py posts ID 50`). Gebruik deze
    om **nooit iets dubbel te plaatsen**: video-ID's/links, toernooien en nieuwsonderwerpen die al
    gepost zijn sla je over.
 
@@ -96,7 +97,32 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Maximaal één hand per dag, gemiddeld een paar keer per week; alleen als de hand echt de moeite
   waard is én je de details uit een bron hebt (niets verzinnen).
 
-## 6. Plaatsen
+## 6. Vastgoed-hyve: nieuws voor beleggers (alleen maandag t/m vrijdag)
+
+- Op zaterdag en zondag niets in de Vastgoed-hyve.
+- Zoek op het web (WebSearch) naar vastgoednieuws van de afgelopen 1–3 dagen dat er echt toe doet
+  voor **vastgoedbeleggers in Nederland**, bijvoorbeeld:
+  - fiscaal: box 3 / werkelijk rendement, overdrachtsbelasting, WOZ, verhuurderheffing;
+  - huur: Wet betaalbare huur, WWS-punten, maximale huurverhoging, opkoopbescherming,
+    vergunningen voor splitsen/kamerverhuur;
+  - financiering: hypotheek- en ECB-rente, financiering van beleggingspanden, banken;
+  - markt: prijzen (CBS/Kadaster/NVM), transactievolumes, beleggers die uitponden of instappen,
+    rendementen (BAR/NAR), grote transacties, commercieel vastgoed (kantoren, winkels, logistiek);
+  - regels: energielabels en verduurzamingseisen, transformatie, bouwproductie, stikstof/netcongestie.
+  Goede bronnen: NOS, FD, Vastgoedmarkt, Vastgoed Actueel, PropertyNL, CBS, Kadaster, DNB,
+  Rijksoverheid. Neem alleen feiten op die je in een betrouwbare bron hebt gelezen.
+- Schrijf **vanuit het perspectief van een investeerder**: wat betekent dit voor rendement,
+  cashflow, waarde, financiering en risico? Maak het concreet (rekenvoorbeeld als dat kan, bijv.
+  "bij een pand van €400.000 betekent dit…"), noem wie er wint en wie verliest, en wat een
+  belegger nu zou kunnen doen of moet afwachten. Zakelijk maar toegankelijk; geen financieel
+  advies beloven.
+- Sluit af met een vraag aan de leden ("Gaan jullie uitponden of juist bijkopen?", "Wat doet dit
+  met jullie rendement?") en zet de bronlink erbij.
+- Maximaal twee berichten per dag (zie `config.json`); is er niets relevants, dan niets plaatsen.
+  Nooit hetzelfde nieuws twee keer.
+- Geen afbeeldingen van nieuwssites gebruiken (auteursrecht).
+
+## 7. Plaatsen
 
 1. Zet alle berichten in `/tmp/wachtrij.json` (formaat: zie bovenaan `plaats_wachtrij.py`), met
    per bericht een duidelijke `label` (bijv. `voetbal`, `youtube-afl-2`, `poker-winnaar`).
