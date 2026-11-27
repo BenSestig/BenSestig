@@ -7,7 +7,8 @@ Usage:
   python3 voetbal.py            # today
   python3 voetbal.py 2026-11-29 # a specific date
 Prints JSON: {"date": ..., "matches": [...]}; "matches" is empty on a day
-without Dutch professional football.
+without Dutch professional football. Finished matches also get "score" and
+"events" (goals and red cards with minute and player).
 """
 import datetime as dt
 import json
@@ -77,14 +78,21 @@ def matches_on(day):
                 home, away = teams["home"]["team"], teams["away"]["team"]
                 if not league.startswith("ned.") and not ({home["id"], away["id"]} & dutch):
                     continue
-                out.append({
+                match = {
                     "competition": comp,
                     "kickoff": kickoff.strftime("%H:%M"),
                     "home": name(home),
                     "away": name(away),
                     "status": e["status"]["type"]["description"],
                     "venue": c.get("venue", {}).get("fullName"),
-                })
+                }
+                if e["status"]["type"].get("completed"):
+                    match["score"] = f'{teams["home"].get("score")}-{teams["away"].get("score")}'
+                    match["events"] = [  # goals and red cards, with minute and player
+                        f'{x.get("clock", {}).get("displayValue", "")} {x.get("type", {}).get("text", "")}: '
+                        + ", ".join(a.get("displayName", "") for a in x.get("athletesInvolved", []))
+                        for x in c.get("details", []) if "Yellow" not in x.get("type", {}).get("text", "")]
+                out.append(match)
     out.sort(key=lambda m: (m["kickoff"], m["competition"]))
     return out
 

@@ -21,15 +21,26 @@ door `plaats_wachtrij.py`.
    om **nooit iets dubbel te plaatsen**: video-ID's/links, toernooien en nieuwsonderwerpen die al
    gepost zijn sla je over.
 
-## 1. Voetbal-hyve
+## 1. Voetbal-hyve: vooruitkijken én terugblikken
 
-- `python3 voetbal.py` geeft de wedstrijden van vandaag met een Eredivisie- of Eerste
-  Divisie-club (competitie, KNVB Beker, Europees). Lege lijst = geen bericht.
-- Staat er vandaag al een wedstrijdbericht in de hyve: geen nieuw bericht.
-- Schrijf één bericht met de wedstrijden van vandaag, gegroepeerd per competitie, met aftraptijd
-  ("19:00 Ajax – PSV"). Licht eruit wat de dag bijzonder maakt (topper, derby, Europese avond,
-  bekerronde) als dat zo is, en sluit af met een vraag aan de leden (voorspellingen, wie wint er).
-- Zet `"uiterlijk"` op 30 minuten vóór de eerste aftrap (formaat `"HH:MM"`).
+Gegevens: `python3 voetbal.py` (vandaag) en `python3 voetbal.py JJJJ-MM-DD` (eerdere dag, met
+uitslagen, doelpunten en rode kaarten). Alleen clubs uit de Eredivisie en Eerste Divisie tellen
+(competitie, KNVB Beker, Europees).
+
+- **Vandaag wedstrijden?** Eén bericht met:
+  - de wedstrijden van vandaag, per competitie, met aftraptijd ("19:00 Ajax – PSV"), en wat de dag
+    bijzonder maakt (topper, derby, Europese avond, bekerronde, degradatie-/titelstrijd);
+  - als er gisteren gespeeld is: een korte terugblik (zie hieronder).
+  - Zet `"uiterlijk"` op 30 minuten vóór de eerste aftrap (formaat `"HH:MM"`).
+- **Vandaag geen wedstrijden, gisteren wel?** Eén terugblik-bericht.
+- **Terugblik**: uitslagen (bij veel wedstrijden alleen de opvallendste) en vooral de
+  **spraakmakendste momenten**: VAR-beslissingen, rode kaarten, wereldgoals, blunders, late
+  winnaars, uitspraken van trainers/spelers, onrust bij een club. Zoek dat op het web (WebSearch,
+  bijv. NOS, VI, Voetbalzone, ESPN NL) en neem alleen op wat meerdere bronnen bevestigen.
+- Sluit **elk** voetbalbericht af met een prikkelende vraag waar mensen hun mening onder kwijt
+  kunnen ("Terechte rode kaart of niet?", "Wie wordt kampioen?", "Jullie voorspelling voor de
+  Klassieker?").
+- Staat het bericht van vandaag al in de hyve: geen nieuw bericht.
 
 ## 2. Poker-hyve: YouTube-video's van Ben
 
@@ -63,7 +74,19 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Maximaal één zo'n bericht per dag; op de meeste dagen is er niets en dat is prima.
 - Bericht: wat er gebeurd is en waarom het ertoe doet, met bronlink.
 
-## 5. Plaatsen
+## 5. Poker-hyve: interessante handen
+
+- Zoek een **super interessante hand** van de afgelopen dagen: een gekke fold, een hero call, een
+  enorme bluff, een cooler, een discutabele beslissing in een grote live- of onlinetoernooi of een
+  high-stakes cashgame (bijv. PokerNews-handanalyses, Triton/EPT/WSOP-streams, Hustler Casino Live,
+  virale handen). Een opvallende hand uit Bens eigen video's mag ook.
+- Beschrijf de hand zodat mensen mee kunnen denken: toernooi/game, blinds, stacks, posities,
+  de kaarten en de actie per straat, en wat er uiteindelijk gebeurde. Link naar de bron/video.
+- Sluit af met een vraag: "Wat had jij gedaan?", "Call of fold?", "Bluff of value?".
+- Maximaal één hand per dag, gemiddeld een paar keer per week; alleen als de hand echt de moeite
+  waard is én je de details uit een bron hebt (niets verzinnen).
+
+## 6. Plaatsen
 
 1. Zet alle berichten in `/tmp/wachtrij.json` (formaat: zie bovenaan `plaats_wachtrij.py`), met
    per bericht een duidelijke `label` (bijv. `voetbal`, `youtube-afl-2`, `poker-winnaar`).
@@ -82,6 +105,8 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Nederlands, informeel en gezellig, alsof Ben het zelf schrijft voor zijn community.
 - Varieer elke dag in woorden en opbouw; geen vaste sjablonen, geen hashtags, hooguit een paar emoji.
 - Kort en to-the-point. Geen dingen verzinnen: alleen feiten die je hebt gecontroleerd.
+- Nodig mensen uit om te reageren: eindig (behalve bij een kale videolink) met een vraag waar ze
+  hun mening onder kwijt kunnen.
 
 ## Eindbericht van de sessie
 

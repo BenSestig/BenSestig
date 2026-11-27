@@ -3,9 +3,13 @@
 Hulpscripts voor een dagelijkse geplande Claude-taak die berichten plaatst op Hyves:
 
 - **Voetbal-hyve**: elke dag dat er een Eredivisie- of Eerste Divisie-club speelt
-  (competitie, KNVB Beker of Europees) een bericht met de wedstrijden van die dag.
+  (competitie, KNVB Beker of Europees) een bericht met de wedstrijden van die dag, plus een
+  terugblik op de vorige speeldag met de spraakmakendste momenten. Elk bericht eindigt met een
+  vraag aan de leden.
 - **Poker-hyve**:
-  - een link naar elke nieuwe video op het YouTube-kanaal;
+  - een link naar de video's op het YouTube-kanaal (oude afleveringen één per week, nieuwe
+    meteen; geen Shorts of home game-video's);
+  - af en toe een interessante hand om over te discussiëren;
   - een bericht als een Nederlander een (live of online) toernooi wint met minimaal €250.000 prijzengeld;
   - een bericht bij grote ontwikkelingen in de pokerwereld.
 
