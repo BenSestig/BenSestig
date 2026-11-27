@@ -130,20 +130,25 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Geef elk bericht één **echte foto** die vrij gebruikt mag worden, via `foto.py` (Wikimedia
   Commons). Uitzonderingen: YouTube-berichten (Hyves toont zelf de video) en eenmalige berichten
   (die hebben hun eigen foto's).
-- Zoek met korte Engelse of Nederlandse trefwoorden die bij het onderwerp passen, bijv.:
-  - voetbal: het stadion van de club waar het bericht vooral over gaat ("Johan Cruijff ArenA",
-    "De Kuip", "Philips Stadion", "AFAS Stadion"), of algemeen "football stadium", "football pitch";
-  - poker: "poker chips", "poker cards", "poker tournament", "casino";
-  - vastgoed: wat bij het nieuws past, bijv. "Amsterdam canal houses", "Dutch row houses",
-    "office building Netherlands", "construction site", "apartment building".
+- Zoek eerst een **echte, specifieke foto** van waar het bericht over gaat, op naam:
+  - voetbal: de hoofdrolspeler(s) uit het bericht ("Rayane Bounida", "Tjaronn Chery"), dan de
+    club in actie ("AZ Alkmaar match", "NEC Nijmegen"), dan het stadion ("De Kuip");
+  - poker: de genoemde speler of het toernooi ("World Series of Poker", "European Poker Tour");
+  - vastgoed: het genoemde gebouw, de straat of de stad/wijk; anders een passend type pand.
+  Lukt dat niet, neem dan een algemene foto ("football stadium", "poker chips",
+  "Dutch row houses").
+- Let bij spelers op de **datum** (`"datum"`): liefst recent, en controleer aan titel en
+  beschrijving dat het echt die persoon of dat gebouw is.
 - `python3 foto.py zoek "trefwoorden"` geeft kandidaten (vrije licenties eerst). Kies er één en
   haal hem op: `python3 foto.py haal "File:..." /tmp/foto-LABEL.jpg`. **Bekijk de foto (Read)**
   voordat je hem gebruikt: hij moet passen bij het bericht, er goed uitzien, geen watermerk of
   grote logo's hebben, en geen herkenbare mensen in een vervelende context tonen.
-- Wek nooit de indruk dat de foto van de besproken wedstrijd of gebeurtenis zelf is.
+- Wek nooit de indruk dat de foto van de besproken wedstrijd of gebeurtenis zelf is: is hij
+  dat niet, zet dan "Archieffoto" voor de naamsvermelding (bijv. "Archieffoto 📷 Hans Reefman /
+  Wikimedia Commons (CC BY-SA 4.0) …").
 - Varieer: gebruik niet dezelfde foto als in de recente berichten van die hyve.
-- Geeft `haal` een `"naamsvermelding"`, zet die regel dan onderaan de tekst van het bericht.
-  Bij CC0 / publiek domein is dat niet nodig.
+- Geeft `haal` een `"naamsvermelding"`, zet die regel dan onderaan de tekst van het bericht
+  (verplicht bij CC BY / CC BY-SA). Bij CC0 / publiek domein is dat niet nodig.
 - Nooit foto's van nieuwssites, persbureaus, clubs of andere bronnen buiten `foto.py`.
 - Lukt het niet om een passende foto te vinden: plaats het bericht zonder foto.
 

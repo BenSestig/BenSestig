@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Finds real photos that may be reused freely, on Wikimedia Commons.
 
+Real, relevant photos (players, clubs, stadiums, poker players, buildings) shot by
+amateurs and photographers who released them under a free licence.
 Only these licences are accepted:
   - CC0 / public domain: free to use, no credit needed;
   - CC BY / CC BY-SA: free to use, but the post must credit the photo
@@ -74,6 +76,7 @@ def _describe(p):
         "licentie": name,
         "naamsvermelding_nodig": credit,
         "maker": _clean(meta.get("Artist", {}).get("value"))[:80],
+        "datum": _clean((meta.get("DateTimeOriginal") or meta.get("DateTime") or {}).get("value"))[:10],
         "beschrijving": _clean(meta.get("ImageDescription", {}).get("value"))[:160],
         "breedte": ii["width"], "hoogte": ii["height"],
         "pagina": ii.get("descriptionurl"),
@@ -91,6 +94,8 @@ def zoek(query, only_free=False):
             continue
         if d["breedte"] < 1000 or d["hoogte"] < 600:
             continue
+        if "logo" in d["titel"].lower() or d["titel"].lower().endswith((".svg", ".png")):
+            continue  # logos and graphics, not photos
         out.append(d)
     out.sort(key=lambda d: d["naamsvermelding_nodig"])  # free-without-credit first
     return out
@@ -109,7 +114,7 @@ def haal(title, dest):
     clean.paste(img)  # drops EXIF and other metadata
     clean.save(dest, "JPEG", quality=88, optimize=True)
     if d["naamsvermelding_nodig"]:
-        d["naamsvermelding"] = f"Foto: {d['maker'] or 'onbekend'} / Wikimedia Commons ({d['licentie']}) {d['pagina']}"
+        d["naamsvermelding"] = f"📷 {d['maker'] or 'onbekend'} / Wikimedia Commons ({d['licentie']}) {d['pagina']}"
     d["bestand"] = dest
     return d
 
