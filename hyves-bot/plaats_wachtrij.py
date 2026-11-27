@@ -73,9 +73,22 @@ def plan(queue, now, window=DEFAULT_WINDOW):
     return planned
 
 
+FOLD = 200  # Hyves shows about 250 characters before "Lees meer"; keep the question well above it
+
+
+def check_fold(item):
+    """The question / call to action must be visible without tapping "Lees meer"."""
+    head = item["tekst"].encode("utf-16-le")[: FOLD * 2].decode("utf-16-le", "ignore")
+    if "?" not in head and not item.get("geen_vraag"):
+        raise SystemExit(f"{item.get('label', '')}: geen vraag in de eerste {FOLD} tekens. "
+                         "Zet de vraag/CTA bovenaan (boven 'Lees meer').")
+
+
 def main(path, dry=False, window=DEFAULT_WINDOW):
     with open(path) as f:
         queue = json.load(f)
+    for item in queue:
+        check_fold(item)
     planned = plan(queue, dt.datetime.now(AMS), window)
     for when, item in planned:
         print(f"{when:%H:%M:%S}  {item.get('label', '')}: {item['tekst'][:70]!r}", flush=True)

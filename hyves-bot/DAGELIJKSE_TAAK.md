@@ -174,6 +174,18 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 
 ## Stijl
 
+- **De vraag of call-to-action staat altijd boven de vouw.** Hyves toont ongeveer de eerste
+  250 tekens (±5 regels) en zet daarna "Lees meer". Zet de vraag of CTA daarom in de eerste
+  twee regels, binnen de eerste 200 tekens. Opbouw:
+  1. pakkende openingszin + de vraag/CTA (bijv. "Wat een Europese avond! Wat was jullie
+     hoogtepunt? 👇" of "Afl. 2 staat online: call of fold? 🃏");
+  2. witregel;
+  3. de details (uitslagen, uitleg, cijfers);
+  4. onderaan eventueel de naamsvermelding van de foto.
+  `plaats_wachtrij.py` controleert dit: zonder "?" in de eerste 200 tekens weigert hij het bericht,
+  tenzij het in de wachtrij `"geen_vraag": true` heeft (alleen voor een eenmalig bericht van Ben
+  dat al een CTA bovenaan heeft, of een kale videolink).
+
 - **Maximaal 500 tekens per bericht**, inclusief naamsvermelding en links (Hyves weigert langere
   berichten met HTTP 400; `hyves_api.py` controleert dit vooraf). Liever 300–450 tekens.
 - Zet de belangrijkste link (YouTube-video, nieuwsbron, LinkedIn) in het veld `"link"` van de
