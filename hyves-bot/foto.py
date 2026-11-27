@@ -114,7 +114,7 @@ def haal(title, dest):
     clean.paste(img)  # drops EXIF and other metadata
     clean.save(dest, "JPEG", quality=88, optimize=True)
     if d["naamsvermelding_nodig"]:
-        d["naamsvermelding"] = f"📷 {d['maker'] or 'onbekend'} / Wikimedia Commons ({d['licentie']}) {d['pagina']}"
+        d["naamsvermelding"] = f"📷 {d['maker'] or 'onbekend'} / Wikimedia Commons ({d['licentie']})"
     d["bestand"] = dest
     return d
 

@@ -33,6 +33,7 @@ AUTH = "https://auth.hyves.nl"
 API = "https://api.hyves.nl/v1/"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36"
 CACHE = os.path.expanduser("~/.cache/hyves-bot/token.json")
+MAX_POST_LENGTH = 500  # the web app's limit for posts (300 for comments); longer posts get HTTP 400
 
 
 def _save(tok):
@@ -179,6 +180,9 @@ def post_to_group(group_id, text, images=(), link=None):
     Body as the web app builds it (CreatePostDto): content, link, taggedUserIds=[],
     likesEnabled=true, commentsEnabled=true, images=[ImageAttachmentDto(base64Data, filename)];
     null fields (id, visibility, location..., parentCommentId) are left out."""
+    length = len(text.encode("utf-16-le")) // 2  # the app counts like Kotlin: UTF-16 units
+    if length > MAX_POST_LENGTH:
+        raise SystemExit(f"Bericht te lang: {length} tekens, Hyves staat er maximaal {MAX_POST_LENGTH} toe.")
     body = {"content": text, "taggedUserIds": [], "likesEnabled": True, "commentsEnabled": True}
     if link:
         body["link"] = link

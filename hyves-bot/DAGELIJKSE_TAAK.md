@@ -124,7 +124,8 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
   als JSON: `hyve` (sleutel uit `config.json` → `hyves`), `label`, `datum`, `tekst`, `afbeeldingen`
   (paden relatief aan `hyves-bot/`).
 - Plaats elk bericht waarvan `datum` vandaag of eerder is en dat nog niet in die hyve staat
-  (vergelijk de eerste regel van de tekst met de recente berichten). Tekst ongewijzigd laten.
+  (vergelijk de eerste regel van de tekst met de recente berichten). Tekst ongewijzigd laten en
+  `link` meegeven als die in het bestand staat.
 - Deze berichten gelden niet voor het maximum aantal nieuwsberichten per dag.
 
 ## 6c. Foto's bij de berichten
@@ -171,6 +172,12 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
    testberichten plaatsen.
 
 ## Stijl
+
+- **Maximaal 500 tekens per bericht**, inclusief naamsvermelding en links (Hyves weigert langere
+  berichten met HTTP 400; `hyves_api.py` controleert dit vooraf). Liever 300–450 tekens.
+- Zet de belangrijkste link (YouTube-video, nieuwsbron, LinkedIn) in het veld `"link"` van de
+  wachtrij: Hyves toont dan een voorbeeld. Zet hem dan niet ook nog in de tekst, dat kost tekens.
+- Naamsvermelding van foto's kort en zonder URL: "📷 Archieffoto: Maker / Wikimedia Commons (licentie)".
 
 - Nederlands, informeel en gezellig, alsof Ben het zelf schrijft voor zijn community.
 - Varieer elke dag in woorden en opbouw; geen vaste sjablonen, geen hashtags, hooguit een paar emoji.
