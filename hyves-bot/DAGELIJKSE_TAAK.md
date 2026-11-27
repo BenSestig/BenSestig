@@ -149,6 +149,7 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Wek nooit de indruk dat de foto van de besproken wedstrijd of gebeurtenis zelf is: is hij
   dat niet, zet dan "Archieffoto" voor de naamsvermelding (bijv. "Archieffoto 📷 Hans Reefman /
   Wikimedia Commons (CC BY-SA 4.0) …").
+- Alleen **liggende of vierkante** foto's (Bens voorkeur); `foto.py` slaat staande foto's over.
 - Varieer: gebruik niet dezelfde foto als in de recente berichten van die hyve.
 - Geeft `haal` een `"naamsvermelding"`, zet die regel dan onderaan de tekst van het bericht
   (verplicht bij CC BY / CC BY-SA). Bij CC0 / publiek domein is dat niet nodig.

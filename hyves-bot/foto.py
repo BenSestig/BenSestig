@@ -3,6 +3,8 @@
 
 Real, relevant photos (players, clubs, stadiums, poker players, buildings) shot by
 amateurs and photographers who released them under a free licence.
+Only landscape or square photos are used (Ben's preference): portrait photos are
+skipped when searching and cropped to a square when fetched anyway.
 Only these licences are accepted:
   - CC0 / public domain: free to use, no credit needed;
   - CC BY / CC BY-SA: free to use, but the post must credit the photo
@@ -94,6 +96,8 @@ def zoek(query, only_free=False):
             continue
         if d["breedte"] < 1000 or d["hoogte"] < 600:
             continue
+        if d["hoogte"] > d["breedte"]:
+            continue  # Ben wants landscape photos, at most square
         if "logo" in d["titel"].lower() or d["titel"].lower().endswith((".svg", ".png")):
             continue  # logos and graphics, not photos
         out.append(d)
@@ -109,6 +113,9 @@ def haal(title, dest):
     if d["naamsvermelding_nodig"] is None:
         raise SystemExit(f"Licentie niet vrij bruikbaar: {d['licentie']}")
     img = Image.open(io.BytesIO(_get(d["url"]).content)).convert("RGB")
+    if img.height > img.width:  # portrait: crop to a square, keeping the top (faces, heads)
+        top = int((img.height - img.width) * 0.2)
+        img = img.crop((0, top, img.width, top + img.width))
     img.thumbnail((1280, 1280))
     clean = Image.new("RGB", img.size)
     clean.paste(img)  # drops EXIF and other metadata
