@@ -24,7 +24,6 @@ import secrets
 import sys
 import time
 import urllib.parse
-import uuid
 
 import requests
 
@@ -177,9 +176,8 @@ def call(method, path, body=None, params=None):
 def post_to_group(group_id, text, images=()):
     """Places a post in a hyve, optionally with images (paths to PNG/JPEG files).
     Request shape taken from the web app: CreatePostDto with ImageAttachmentDto(base64Data, filename);
-    the text field is called `content`, as in the posts the API returns. CreatePostDto starts with
-    an `id`: the web app generates it client-side (a UUID), so the server can recognise a repeat."""
-    body = {"id": str(uuid.uuid4()), "content": text}
+    the text field is called `content`, as in the posts the API returns."""
+    body = {"content": text}
     if images:
         body["images"] = []
         for path in images:
