@@ -18,6 +18,7 @@ import base64
 import hashlib
 import html
 import json
+import mimetypes
 import os
 import re
 import secrets
@@ -178,8 +179,9 @@ def post_to_group(group_id, text, images=(), link=None):
     """Places a post in a hyve, optionally with images (paths to JPEG/PNG files) and a link.
 
     Body as the web app builds it (CreatePostDto): content, link, taggedUserIds=[],
-    likesEnabled=true, commentsEnabled=true, images=[ImageAttachmentDto(base64Data, filename)];
-    null fields (id, visibility, location..., parentCommentId) are left out."""
+    likesEnabled=true, commentsEnabled=true, images=[ImageAttachmentDto]; null fields (id,
+    visibility, location..., parentCommentId) are left out. ImageAttachmentDto is serialised as
+    {"data": <base64>, "contentType": "image/jpeg", "filename": "..."}."""
     length = len(text.encode("utf-16-le")) // 2  # the app counts like Kotlin: UTF-16 units
     if length > MAX_POST_LENGTH:
         raise SystemExit(f"Bericht te lang: {length} tekens, Hyves staat er maximaal {MAX_POST_LENGTH} toe.")
@@ -190,7 +192,8 @@ def post_to_group(group_id, text, images=(), link=None):
         body["images"] = []
         for path in images:
             with open(path, "rb") as f:
-                body["images"].append({"base64Data": base64.b64encode(f.read()).decode(),
+                body["images"].append({"data": base64.b64encode(f.read()).decode(),
+                                       "contentType": mimetypes.guess_type(path)[0] or "image/jpeg",
                                        "filename": os.path.basename(path)})
     return call("POST", f"groups/{group_id}/posts", body=body)
 
