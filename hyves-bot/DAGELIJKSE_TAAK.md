@@ -42,12 +42,6 @@ Terugblik en vooruitblik zijn **twee aparte berichten**.
   - Eerste aftrap **om 18:00 of later**: niet in de ochtendronde, maar in de **avondronde**
     (aparte geplande sessie rond 16:40, venster 17:00–19:00). De avondronde doet alleen dit:
     vooruitblik maken en plaatsen met `plaats_wachtrij.py ... --venster 17:00-19:00`, verder niets.
-- Voeg aan elk voetbalbericht een eigen kaart toe als afbeelding: `python3 kaart.py JJJJ-MM-DD
-  /tmp/kaart.png ["Titel"]` (uitslagen van gisteren bij de terugblik, programma van vandaag bij
-  de vooruitblik; titel bijv. "Europese donderdag" of "Vanavond op het programma"). Bekijk de kaart
-  even (Read) voordat je hem gebruikt, en zet het pad in `"afbeeldingen"` in de wachtrij.
-- Gebruik **nooit** persfoto's, clublogo's of andere afbeeldingen van internet: daar rust
-  auteursrecht op. Alleen zelfgemaakte afbeeldingen zoals de kaart.
 - Sluit **elk** voetbalbericht af met een prikkelende vraag waar mensen hun mening onder kwijt
   kunnen ("Terechte rode kaart of niet?", "Wie wordt kampioen?", "Jullie voorspelling voor de
   Klassieker?").
@@ -120,7 +114,7 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
   met jullie rendement?") en zet de bronlink erbij.
 - Maximaal twee berichten per dag (zie `config.json`); is er niets relevants, dan niets plaatsen.
   Nooit hetzelfde nieuws twee keer.
-- Geen afbeeldingen van nieuwssites gebruiken (auteursrecht).
+- Foto: zie stap 6c.
 
 ## 6b. Eenmalige berichten
 
@@ -130,6 +124,28 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Plaats elk bericht waarvan `datum` vandaag of eerder is en dat nog niet in die hyve staat
   (vergelijk de eerste regel van de tekst met de recente berichten). Tekst ongewijzigd laten.
 - Deze berichten gelden niet voor het maximum aantal nieuwsberichten per dag.
+
+## 6c. Foto's bij de berichten
+
+- Geef elk bericht één **echte foto** die vrij gebruikt mag worden, via `foto.py` (Wikimedia
+  Commons). Uitzonderingen: YouTube-berichten (Hyves toont zelf de video) en eenmalige berichten
+  (die hebben hun eigen foto's).
+- Zoek met korte Engelse of Nederlandse trefwoorden die bij het onderwerp passen, bijv.:
+  - voetbal: het stadion van de club waar het bericht vooral over gaat ("Johan Cruijff ArenA",
+    "De Kuip", "Philips Stadion", "AFAS Stadion"), of algemeen "football stadium", "football pitch";
+  - poker: "poker chips", "poker cards", "poker tournament", "casino";
+  - vastgoed: wat bij het nieuws past, bijv. "Amsterdam canal houses", "Dutch row houses",
+    "office building Netherlands", "construction site", "apartment building".
+- `python3 foto.py zoek "trefwoorden"` geeft kandidaten (vrije licenties eerst). Kies er één en
+  haal hem op: `python3 foto.py haal "File:..." /tmp/foto-LABEL.jpg`. **Bekijk de foto (Read)**
+  voordat je hem gebruikt: hij moet passen bij het bericht, er goed uitzien, geen watermerk of
+  grote logo's hebben, en geen herkenbare mensen in een vervelende context tonen.
+- Wek nooit de indruk dat de foto van de besproken wedstrijd of gebeurtenis zelf is.
+- Varieer: gebruik niet dezelfde foto als in de recente berichten van die hyve.
+- Geeft `haal` een `"naamsvermelding"`, zet die regel dan onderaan de tekst van het bericht.
+  Bij CC0 / publiek domein is dat niet nodig.
+- Nooit foto's van nieuwssites, persbureaus, clubs of andere bronnen buiten `foto.py`.
+- Lukt het niet om een passende foto te vinden: plaats het bericht zonder foto.
 
 ## 7. Plaatsen
 
