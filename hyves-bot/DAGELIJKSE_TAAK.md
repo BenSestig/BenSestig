@@ -149,6 +149,10 @@ dat artikel en de naam van de bron, net als Facebook en LinkedIn.
   vastgoednieuws). Kies een betrouwbaar Nederlands artikel als dat er is (NOS, VI, ESPN NL,
   Voetbalzone, AD; voor poker pokercity.nl, casinonieuws.nl, pokernews.nl; Vastgoedmarkt, FD). Bij een terugblik op meerdere
   wedstrijden: het artikel over de belangrijkste wedstrijd of een overzichtsartikel.
+- Ervaring (nov 2026): Hyves maakt een voorbeeld met foto voor **NOS** en **YouTube**. Voor
+  ongeveer 20 andere sites kwam er niets (o.a. VI, Voetbalzone, RTV Noord, psv.nl, eredivisie.nl,
+  Omroep Brabant, pokercity.nl, casinonieuws.nl, pokernews, poker.org, cardplayer, Yahoo). Probeer
+  daarom eerst een NOS-artikel; test daarna hooguit 2–3 andere links en ga dan door naar een vrije foto.
 - Controleer vooraf met `python3 hyves_api.py linkcheck URL` dat Hyves een voorbeeld **met foto**
   maakt. Bekijk ook of die foto bij het bericht en het thema van de hyve past.
 - Met een linkvoorbeeld geen eigen foto meesturen en geen naamsvermelding nodig. Zet de URL
