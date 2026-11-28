@@ -130,9 +130,24 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 
 ## 6c. Foto's bij de berichten
 
-- Geef elk bericht één **echte foto** die vrij gebruikt mag worden, via `foto.py` (Wikimedia
-  Commons). Uitzonderingen: YouTube-berichten (Hyves toont zelf de video) en eenmalige berichten
-  (die hebben hun eigen foto's).
+**Eerste keus: een actuele foto via de link naar het nieuwsartikel.** Persfoto's zelf uploaden
+mag niet (auteursrecht, ook op social media). Maar linken mag: zet de URL van het beste artikel in
+het veld `"link"` van de wachtrij. Hyves maakt dan zelf een linkvoorbeeld met de actuele foto van
+dat artikel en de naam van de bron, net als Facebook en LinkedIn.
+
+- Gebruik dit bij elk bericht dat over nieuws gaat (terugblik, pokerwinnaar, pokernieuws,
+  vastgoednieuws). Kies een betrouwbaar Nederlands artikel als dat er is (NOS, VI, ESPN NL,
+  Voetbalzone, AD, PokerNews, PokerFirma, Vastgoedmarkt, FD). Bij een terugblik op meerdere
+  wedstrijden: het artikel over de belangrijkste wedstrijd of een overzichtsartikel.
+- Controleer vooraf met `python3 hyves_api.py linkcheck URL` dat Hyves een voorbeeld **met foto**
+  maakt. Bekijk ook of die foto bij het bericht en het thema van de hyve past.
+- Met een linkvoorbeeld geen eigen foto meesturen en geen naamsvermelding nodig. Zet de URL
+  niet ook nog in de tekst.
+- Zonder geschikt artikel, of als het linkvoorbeeld geen (passende) foto heeft: gebruik een vrije
+  foto via `foto.py` zoals hieronder.
+
+**Tweede keus: een vrije foto via `foto.py`** (Wikimedia Commons). Uitzonderingen: YouTube-berichten
+(Hyves toont zelf de video) en eenmalige berichten (die hebben hun eigen foto's).
 - Zoek eerst een **echte, specifieke foto** van waar het bericht over gaat, op naam:
   - voetbal: de hoofdrolspeler(s) uit het bericht ("Rayane Bounida", "Tjaronn Chery"), dan de
     club in actie ("AZ Alkmaar match", "NEC Nijmegen"), dan het stadion ("De Kuip");

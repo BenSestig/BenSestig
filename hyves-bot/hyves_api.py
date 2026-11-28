@@ -12,6 +12,7 @@ Usage:
   python3 hyves_api.py groups [ZOEKTERM]      # list/search hyves (groups)
   python3 hyves_api.py posts GROUP_ID [N]     # latest N posts in a hyve
   python3 hyves_api.py post GROUP_ID FILE [AFBEELDING ...]  # post text in FILE (+ images)
+  python3 hyves_api.py linkcheck URL          # link preview Hyves makes for URL (title, photo)
   python3 hyves_api.py raw METHOD PATH [JSON] # any API call, for debugging
 """
 import base64
@@ -219,6 +220,9 @@ def main(argv):
         with open(args[1]) as f:
             text = f.read().strip()
         _print(post_to_group(args[0], text, args[2:]))
+    elif cmd == "linkcheck":
+        # what Hyves will show as link preview (title, image) for a URL
+        _print(call("GET", "posts/urlMeta", params={"url": args[0]}))
     elif cmd == "raw":
         _print(call(args[0].upper(), args[1], body=json.loads(args[2]) if len(args) > 2 else None))
     else:
