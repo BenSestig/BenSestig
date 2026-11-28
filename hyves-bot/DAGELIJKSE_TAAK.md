@@ -149,6 +149,11 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Wek nooit de indruk dat de foto van de besproken wedstrijd of gebeurtenis zelf is: is hij
   dat niet, zet dan "Archieffoto" voor de naamsvermelding (bijv. "Archieffoto 📷 Hans Reefman /
   Wikimedia Commons (CC BY-SA 4.0) …").
+- De foto past altijd bij het **thema van de hyve**: in Poker een pokerfoto (tafel, kaarten, chips,
+  toernooi), in Voetbal een voetbalfoto, in Vastgoed een gebouw/woning. Gaat een pokerbericht over
+  iemand die vooral van iets anders bekend is (bijv. voetballer Neymar die een pokertoernooi wint),
+  neem dan een foto van die persoon **aan de pokertafel**; is die er niet, dan een algemene pokerfoto.
+  Nooit een voetbalfoto in Poker of andersom.
 - Alleen **liggende of vierkante** foto's (Bens voorkeur); `foto.py` slaat staande foto's over.
 - Varieer: gebruik niet dezelfde foto als in de recente berichten van die hyve.
 - Geeft `haal` een `"naamsvermelding"`, zet die regel dan onderaan de tekst van het bericht
