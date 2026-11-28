@@ -63,13 +63,23 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 - Eén bericht per video: korte, enthousiaste teaser in Bens stem (het is zijn eigen kanaal) +
   de link `https://www.youtube.com/watch?v=ID`.
 
+## Pokerbronnen (voor stap 3, 4 en 5)
+
+Ben wil vooral deze Nederlandse pokersites gebruiken, in deze volgorde:
+1. **pokercity.nl** en **casinonieuws.nl** (hoofdbronnen: zoek hier altijd eerst, bijv. WebSearch
+   met `site:pokercity.nl` en `site:casinonieuws.nl`);
+2. **pokernews.nl** (Nederlandse PokerNews);
+3. pas daarna andere bronnen (The Hendon Mob voor uitslagen, internationale PokerNews, organisatoren).
+Link in het bericht (veld `"link"`) bij voorkeur naar een artikel van pokercity.nl of casinonieuws.nl,
+anders pokernews.nl, zodat het linkvoorbeeld hun actuele foto toont.
+
 ## 3. Poker-hyve: Nederlandse winnaars (≥ €250.000)
 
 - Zoek op het web (WebSearch) naar Nederlanders die de afgelopen dagen een pokertoernooi hebben
   gewonnen met een prijs van minimaal €250.000 (andere valuta omrekenen tegen de actuele koers),
   live én online (bijv. WSOP, EPT, WPT, Triton, PokerStars/GGPoker-series, Holland Casino).
 - Alleen posten als het zeker is: winnaar is Nederlands, het is een **winst** (geen tweede plaats),
-  prijs ≥ €250.000, en het staat bij een betrouwbare bron (PokerNews, The Hendon Mob,
+  prijs ≥ €250.000, en het staat bij een betrouwbare bron (zie Pokerbronnen; The Hendon Mob,
   organisator). Twijfel = niet posten.
 - Bericht: wie, welk toernooi, hoeveel, kort iets over de finale; bronlink erbij.
 
@@ -85,7 +95,7 @@ Kanaal en regels staan in `config.json`. Haal de video's op met `python3 youtube
 
 - Zoek een **super interessante hand** van de afgelopen dagen: een gekke fold, een hero call, een
   enorme bluff, een cooler, een discutabele beslissing in een grote live- of onlinetoernooi of een
-  high-stakes cashgame (bijv. PokerNews-handanalyses, Triton/EPT/WSOP-streams, Hustler Casino Live,
+  high-stakes cashgame (bijv. handanalyses op pokercity.nl, casinonieuws.nl of pokernews.nl, Triton/EPT/WSOP-streams, Hustler Casino Live,
   virale handen). Een opvallende hand uit Bens eigen video's mag ook.
 - Beschrijf de hand zodat mensen mee kunnen denken: toernooi/game, blinds, stacks, posities,
   de kaarten en de actie per straat, en wat er uiteindelijk gebeurde. Link naar de bron/video.
@@ -137,7 +147,7 @@ dat artikel en de naam van de bron, net als Facebook en LinkedIn.
 
 - Gebruik dit bij elk bericht dat over nieuws gaat (terugblik, pokerwinnaar, pokernieuws,
   vastgoednieuws). Kies een betrouwbaar Nederlands artikel als dat er is (NOS, VI, ESPN NL,
-  Voetbalzone, AD, PokerNews, PokerFirma, Vastgoedmarkt, FD). Bij een terugblik op meerdere
+  Voetbalzone, AD; voor poker pokercity.nl, casinonieuws.nl, pokernews.nl; Vastgoedmarkt, FD). Bij een terugblik op meerdere
   wedstrijden: het artikel over de belangrijkste wedstrijd of een overzichtsartikel.
 - Controleer vooraf met `python3 hyves_api.py linkcheck URL` dat Hyves een voorbeeld **met foto**
   maakt. Bekijk ook of die foto bij het bericht en het thema van de hyve past.

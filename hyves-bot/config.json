@@ -37,7 +37,12 @@
     ]
   },
   "poker": {
-    "minimum_prijzengeld_eur": 250000
+    "minimum_prijzengeld_eur": 250000,
+    "bronnen": [
+      "pokercity.nl",
+      "casinonieuws.nl",
+      "pokernews.nl"
+    ]
   },
   "vastgoed": {
     "dagen": "maandag t/m vrijdag",
