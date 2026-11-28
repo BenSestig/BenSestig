@@ -126,7 +126,7 @@ anders pokernews.nl, zodat het linkvoorbeeld hun actuele foto toont.
   met jullie rendement?") en zet de bronlink erbij.
 - Maximaal twee berichten per dag (zie `config.json`); is er niets relevants, dan niets plaatsen.
   Nooit hetzelfde nieuws twee keer.
-- Foto: zie stap 6c.
+- Afbeelding: alleen de thumbnail via de artikellink (stap 6c), anders geen.
 
 ## 6b. Eenmalige berichten
 
@@ -138,57 +138,25 @@ anders pokernews.nl, zodat het linkvoorbeeld hun actuele foto toont.
   `link` meegeven als die in het bestand staat.
 - Deze berichten gelden niet voor het maximum aantal nieuwsberichten per dag.
 
-## 6c. Foto's bij de berichten
+## 6c. Afbeeldingen: alleen de thumbnail van een artikel, anders geen
 
-**Eerste keus: een actuele foto via de link naar het nieuwsartikel.** Persfoto's zelf uploaden
-mag niet (auteursrecht, ook op social media). Maar linken mag: zet de URL van het beste artikel in
-het veld `"link"` van de wachtrij. Hyves maakt dan zelf een linkvoorbeeld met de actuele foto van
-dat artikel en de naam van de bron, net als Facebook en LinkedIn.
+Ben wil **alleen** de thumbnail (linkvoorbeeld) van een artikel. Is die er niet, dan **geen
+afbeelding**. Dus geen vrije foto's, geen stockfoto's en geen eigen uploads (behalve de foto's in
+eenmalige berichten die Ben zelf aanlevert, zoals het kasteeltje).
 
-- Gebruik dit bij elk bericht dat over nieuws gaat (terugblik, pokerwinnaar, pokernieuws,
-  vastgoednieuws). Kies een betrouwbaar Nederlands artikel als dat er is (NOS, VI, ESPN NL,
-  Voetbalzone, AD; voor poker pokercity.nl, casinonieuws.nl, pokernews.nl; Vastgoedmarkt, FD). Bij een terugblik op meerdere
-  wedstrijden: het artikel over de belangrijkste wedstrijd of een overzichtsartikel.
+- Zet bij elk bericht dat over nieuws gaat de URL van het beste artikel in het veld `"link"` van
+  de wachtrij. Hyves maakt dan zelf een linkvoorbeeld met de actuele foto en de naam van de bron.
+  Zet de URL dan niet ook nog in de tekst.
+- Controleer met `python3 hyves_api.py linkcheck URL` of Hyves een voorbeeld **met foto** maakt
+  (`linkPreview.imageUrl` gevuld) en of die bij het onderwerp en de hyve past (nooit een
+  voetbalfoto in Poker).
 - Ervaring (nov 2026): Hyves maakt een voorbeeld met foto voor **NOS** en **YouTube**. Voor
   ongeveer 20 andere sites kwam er niets (o.a. VI, Voetbalzone, RTV Noord, psv.nl, eredivisie.nl,
   Omroep Brabant, pokercity.nl, casinonieuws.nl, pokernews, poker.org, cardplayer, Yahoo). Probeer
-  daarom eerst een NOS-artikel; test daarna hooguit 2–3 andere links en ga dan door naar een vrije foto.
-- Controleer vooraf met `python3 hyves_api.py linkcheck URL` dat Hyves een voorbeeld **met foto**
-  maakt. Bekijk ook of die foto bij het bericht en het thema van de hyve past.
-- Met een linkvoorbeeld geen eigen foto meesturen en geen naamsvermelding nodig. Zet de URL
-  niet ook nog in de tekst.
-- Zonder geschikt artikel, of als het linkvoorbeeld geen (passende) foto heeft: gebruik een vrije
-  foto via `foto.py` zoals hieronder.
-
-**Tweede keus: een vrije foto via `foto.py`** (Wikimedia Commons). Uitzonderingen: YouTube-berichten
-(Hyves toont zelf de video) en eenmalige berichten (die hebben hun eigen foto's).
-- Zoek eerst een **echte, specifieke foto** van waar het bericht over gaat, op naam:
-  - voetbal: de hoofdrolspeler(s) uit het bericht ("Rayane Bounida", "Tjaronn Chery"), dan de
-    club in actie ("AZ Alkmaar match", "NEC Nijmegen"), dan het stadion ("De Kuip");
-  - poker: de genoemde speler of het toernooi ("World Series of Poker", "European Poker Tour");
-  - vastgoed: het genoemde gebouw, de straat of de stad/wijk; anders een passend type pand.
-  Lukt dat niet, neem dan een algemene foto ("football stadium", "poker chips",
-  "Dutch row houses").
-- Let bij spelers op de **datum** (`"datum"`): liefst recent, en controleer aan titel en
-  beschrijving dat het echt die persoon of dat gebouw is.
-- `python3 foto.py zoek "trefwoorden"` geeft kandidaten (vrije licenties eerst). Kies er één en
-  haal hem op: `python3 foto.py haal "File:..." /tmp/foto-LABEL.jpg`. **Bekijk de foto (Read)**
-  voordat je hem gebruikt: hij moet passen bij het bericht, er goed uitzien, geen watermerk of
-  grote logo's hebben, en geen herkenbare mensen in een vervelende context tonen.
-- Wek nooit de indruk dat de foto van de besproken wedstrijd of gebeurtenis zelf is: is hij
-  dat niet, zet dan "Archieffoto" voor de naamsvermelding (bijv. "Archieffoto 📷 Hans Reefman /
-  Wikimedia Commons (CC BY-SA 4.0) …").
-- De foto past altijd bij het **thema van de hyve**: in Poker een pokerfoto (tafel, kaarten, chips,
-  toernooi), in Voetbal een voetbalfoto, in Vastgoed een gebouw/woning. Gaat een pokerbericht over
-  iemand die vooral van iets anders bekend is (bijv. voetballer Neymar die een pokertoernooi wint),
-  neem dan een foto van die persoon **aan de pokertafel**; is die er niet, dan een algemene pokerfoto.
-  Nooit een voetbalfoto in Poker of andersom.
-- Alleen **liggende of vierkante** foto's (Bens voorkeur); `foto.py` slaat staande foto's over.
-- Varieer: gebruik niet dezelfde foto als in de recente berichten van die hyve.
-- Geeft `haal` een `"naamsvermelding"`, zet die regel dan onderaan de tekst van het bericht
-  (verplicht bij CC BY / CC BY-SA). Bij CC0 / publiek domein is dat niet nodig.
-- Nooit foto's van nieuwssites, persbureaus, clubs of andere bronnen buiten `foto.py`.
-- Lukt het niet om een passende foto te vinden: plaats het bericht zonder foto.
+  daarom eerst een NOS-artikel; test daarna hooguit 2–3 andere links.
+- Geeft geen enkele link een voorbeeld met foto: plaats het bericht **zonder afbeelding** (en zonder
+  link, of met de bronlink als die nuttig is voor wie meer wil lezen).
+- `foto.py` wordt niet meer gebruikt.
 
 ## 7. Plaatsen
 
@@ -215,7 +183,6 @@ dat artikel en de naam van de bron, net als Facebook en LinkedIn.
      hoogtepunt? 👇" of "Afl. 2 staat online: call of fold? 🃏");
   2. witregel;
   3. de details (uitslagen, uitleg, cijfers);
-  4. onderaan eventueel de naamsvermelding van de foto.
   `plaats_wachtrij.py` controleert dit: zonder "?" in de eerste 200 tekens weigert hij het bericht,
   tenzij het in de wachtrij `"geen_vraag": true` heeft (alleen voor een eenmalig bericht van Ben
   dat al een CTA bovenaan heeft, of een kale videolink).
@@ -224,7 +191,6 @@ dat artikel en de naam van de bron, net als Facebook en LinkedIn.
   berichten met HTTP 400; `hyves_api.py` controleert dit vooraf). Liever 300–450 tekens.
 - Zet de belangrijkste link (YouTube-video, nieuwsbron, LinkedIn) in het veld `"link"` van de
   wachtrij: Hyves toont dan een voorbeeld. Zet hem dan niet ook nog in de tekst, dat kost tekens.
-- Naamsvermelding van foto's kort en zonder URL: "📷 Archieffoto: Maker / Wikimedia Commons (licentie)".
 
 - Nederlands, informeel en gezellig, alsof Ben het zelf schrijft voor zijn community.
 - Varieer elke dag in woorden en opbouw; geen vaste sjablonen, geen hashtags, hooguit een paar emoji.
